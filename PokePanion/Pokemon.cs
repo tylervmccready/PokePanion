@@ -82,7 +82,7 @@ namespace PokePanion
                 var evoItems = dataGroups[5].Split(", ");
 
 
-                pokeDex[basics[0]] = new Pokemon(basics, moveLevels, moves, evoLevels, evoNames, evoItems);
+                pokeDex[basics[0].ToLower()] = new Pokemon(basics, moveLevels, moves, evoLevels, evoNames, evoItems);
             }
 
             return pokeDex;

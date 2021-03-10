@@ -23,6 +23,7 @@ namespace PokePanion
                 var browser = Console.ReadLine().ToLower();
                 
                 Console.WriteLine("Building Moves and Pokemon Data from scratch");
+                Console.ForegroundColor = ConsoleColor.Yellow;
                 Console.WriteLine("Please note: This will take several minutes");
                 Console.ForegroundColor = Console.BackgroundColor;
 
