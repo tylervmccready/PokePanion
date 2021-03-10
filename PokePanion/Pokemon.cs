@@ -1,10 +1,6 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Runtime.CompilerServices;
-using NUnit.Framework;
-using OpenQA.Selenium.Interactions;
 
 namespace PokePanion
 {
@@ -92,42 +88,7 @@ namespace PokePanion
             return pokeDex;
         }
         
-        /*/// <summary>
-        /// Collects and splits data for a given pokemon into arrays
-        /// </summary>
-        /// <param name="pokemon">Pokemon in question</param>
-        /// <returns>Tuple of string arrays containing pokemon's data</returns>
-        public static Pokemon GetPokemonData(string pokemon)
-        {
-            pokemon = char.ToUpper(pokemon[0]) + pokemon.Substring(1).ToLower();
-            string[] basics, moveLevels, moves, evoLevels, evoNames, evoItems;
-            using (var pokeDex = new StreamReader("PokemonData.txt"))
-            {
-                string currentLine;
-                try
-                {
-                    for (int line = 1; ; line++)
-                    {
-                        currentLine = pokeDex.ReadLine();
-                        if (currentLine.StartsWith(pokemon)){break;}
-                    }
-                }
-                catch (KeyNotFoundException)
-                {
-                    return new Pokemon();
-                }
-
-                var dataGroups = currentLine.Split("| ");
-                basics = dataGroups[0].Split(", ");
-                moveLevels = dataGroups[1].Split(", ");
-                moves = dataGroups[2].Split(", ");
-                evoLevels = dataGroups[3].Split(", ");
-                evoNames = dataGroups[4].Split(", ");
-                evoItems = dataGroups[5].Split(", ");
-            }
-
-            return new Pokemon(basics, moveLevels, moves, evoLevels, evoNames, evoItems);
-        }*/
+        
 
         /// <summary>
         /// Displays table of learned moves for a given pokemon
@@ -144,7 +105,7 @@ namespace PokePanion
                 Console.WriteLine($"{pokemon} isn't a recognized pokemon name. Please check your spelling and try again.");
                 return;
             }
-            Console.WriteLine("Level\t\tMove");
+            Console.WriteLine("Level\tMove");
             for (int i = 0; i < pokemon.MoveLevels.Length; i++)
             {
                 Console.WriteLine($"{pokemon.MoveLevels[i]}\t{pokemon.Moves[i]}");
@@ -154,7 +115,6 @@ namespace PokePanion
         /// <summary>
         /// Displays the next move the instanced pokemon at a given level will learn
         /// </summary>
-        /// <param name="level">pokemon's level</param>
         public void NextLearnedMove()
         {
             int idx;

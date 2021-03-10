@@ -24,17 +24,48 @@ namespace PokePanion
             {
                 case true:
                     Console.WriteLine("What move would you like information on?:");
-                    var move = Console.ReadLine();
-                    MoveInformation(moveDex[move]);
+                    var input = Console.ReadLine();
+                    try
+                    {
+                        var move = moveDex[input.ToLower()];
+                        MoveInformation(move);
+                    }
+                    catch (KeyNotFoundException)
+                    {
+                        Console.WriteLine($"{input} isn't a recognized move name, would you like to try again?");
+                        var choice = Console.ReadLine().ToLower().Contains("y");
+                        switch (choice)
+                        {
+                            case true:
+                                WhosThatPokemon(answer, pokeDex, moveDex);
+                                break;
+                            case false:
+                                return;
+                        }
+                    }
                     break;
                 case false:
                     Console.WriteLine("What pokemon would you like information on?:");
                     var pokemon = Console.ReadLine();
-                    PokemonInformation(pokeDex[pokemon]);
+                    try
+                    {
+                        PokemonInformation(pokeDex[pokemon.ToLower()]);
+                    }
+                    catch (KeyNotFoundException)
+                    {
+                        Console.WriteLine($"{pokemon} isn't a recognized pokemon name, would you like to try again?");
+                        var choice = Console.ReadLine().ToLower().Contains("y");
+                        switch (choice)
+                        {
+                            case true:
+                                WhosThatPokemon(answer, pokeDex, moveDex);
+                                break;
+                            case false:
+                                return;
+                        }
+                    }
                     break;
             }
-
-            return;
         }
 
         /// <summary>
@@ -44,9 +75,9 @@ namespace PokePanion
         public static void PokemonInformation(Pokemon pokemon)
         {
             Console.WriteLine("Please select the information you would like for this pokemon:");
-            Console.WriteLine("1\tAll moves learned by a specific pokemon via leveling");
-            Console.WriteLine("2\tNext move a pokemon will learn by leveling");
-            Console.WriteLine("3\tDisplay evolution line for a pokemon");
+            Console.WriteLine($"1\tAll moves learned by {pokemon.Basics[0]} via leveling");
+            Console.WriteLine($"2\tNext move {pokemon.Basics[0]} will learn by leveling");
+            Console.WriteLine($"3\tDisplay evolution line for {pokemon.Basics[0]}");
             
             try
             {
@@ -75,7 +106,7 @@ namespace PokePanion
 
         public static void MoveInformation(Move move)
         {
-            Console.WriteLine("Please select the information you would like for this Move:");
+            Console.WriteLine($"Please select the information you would like for {move.Name}:");
             Console.WriteLine("1\tAll available");
             Console.WriteLine("2\tSecondChoice");
             Console.WriteLine("3\tThirdChoice");
@@ -86,7 +117,7 @@ namespace PokePanion
                 switch (selection)
                 {
                     case 1:
-                        
+                        move.WriteMove();
                         break;
                     case 2:
 

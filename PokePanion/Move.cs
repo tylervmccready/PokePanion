@@ -46,7 +46,7 @@ namespace PokePanion
                     {
                         moveTxt = reader.ReadLine().Split(", ");
                     }
-                    catch 
+                    catch (NullReferenceException)
                     {
                         break;
                     }

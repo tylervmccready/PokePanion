@@ -22,7 +22,7 @@ namespace PokePanion
                 driver.Navigate().GoToUrl($"https://serebii.net/pokedex/{Convert.ToInt32(pokemon.Value.Basics[1]):000}.shtml");
                 for (var i = 3; ; i += 2)
                 {
-                    var layout = 1;
+                    // var layout = 1;
                     string moveName;
                     try // Creates Move
                     {
@@ -37,7 +37,7 @@ namespace PokePanion
                             moveName = driver.FindElement(By.CssSelector(
                                     $"#content > main > div > div > table:nth-child(14) > tbody > tr:nth-child({i}) > td:nth-child(2) > a"))
                                 .Text;
-                            layout = 2;
+                            // layout = 2;
                         }
                         catch (NoSuchElementException)
                         {
@@ -419,7 +419,7 @@ namespace PokePanion
                         break;
                     }
                 }
-                levelUpMoves.Item2.Add(movesDex[moveName]);
+                levelUpMoves.Item2.Add(movesDex[moveName.ToLower()]);
             }
 
             return levelUpMoves;
