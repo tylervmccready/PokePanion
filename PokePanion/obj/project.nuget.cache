@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "uQ/4aI/mYmpS/O6JYxhlHsvJJAZi9LkLBsK5HE6S4WXGka/x4e2vKeZ5MRG3UmmA+MYcU8hGbMK/v2sUxIgf7w==",
+  "success": true,
+  "projectFilePath": "T:\\MSSA\\Side Projects\\PokePanion\\PokePanion\\PokePanion.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\tyler\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\tyler\\.nuget\\packages\\netstandard.library\\2.0.0\\netstandard.library.2.0.0.nupkg.sha512",
+    "C:\\Users\\tyler\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\tyler\\.nuget\\packages\\nunit\\3.13.1\\nunit.3.13.1.nupkg.sha512",
+    "C:\\Users\\tyler\\.nuget\\packages\\nunittestadapter\\2.3.0\\nunittestadapter.2.3.0.nupkg.sha512",
+    "C:\\Users\\tyler\\.nuget\\packages\\selenium.support\\4.0.0-beta1\\selenium.support.4.0.0-beta1.nupkg.sha512",
+    "C:\\Users\\tyler\\.nuget\\packages\\selenium.webdriver\\4.0.0-beta1\\selenium.webdriver.4.0.0-beta1.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,126 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "PokePanion/1.0.0": {
+        "dependencies": {
+          "NUnit": "3.13.1",
+          "NUnitTestAdapter": "2.3.0",
+          "Selenium.Support": "4.0.0-beta1",
+          "Selenium.WebDriver": "4.0.0-beta1"
+        },
+        "runtime": {
+          "PokePanion.dll": {}
+        }
+      },
+      "Microsoft.NETCore.Platforms/1.1.0": {},
+      "NETStandard.Library/2.0.0": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.1.0"
+        }
+      },
+      "Newtonsoft.Json/12.0.3": {
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "12.0.0.0",
+            "fileVersion": "12.0.3.23909"
+          }
+        }
+      },
+      "NUnit/3.13.1": {
+        "dependencies": {
+          "NETStandard.Library": "2.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/nunit.framework.dll": {
+            "assemblyVersion": "3.13.1.0",
+            "fileVersion": "3.13.1.0"
+          }
+        }
+      },
+      "NUnitTestAdapter/2.3.0": {},
+      "Selenium.Support/4.0.0-beta1": {
+        "dependencies": {
+          "Selenium.WebDriver": "4.0.0-beta1"
+        },
+        "runtime": {
+          "lib/net5.0/WebDriver.Support.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.0.0.0"
+          }
+        }
+      },
+      "Selenium.WebDriver/4.0.0-beta1": {
+        "dependencies": {
+          "Newtonsoft.Json": "12.0.3"
+        },
+        "runtime": {
+          "lib/net5.0/WebDriver.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "PokePanion/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.NETCore.Platforms/1.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-kz0PEW2lhqygehI/d6XsPCQzD7ff7gUJaVGPVETX611eadGsA3A877GdSlU0LRVMCTH/+P3o2iDTak+S08V2+A==",
+      "path": "microsoft.netcore.platforms/1.1.0",
+      "hashPath": "microsoft.netcore.platforms.1.1.0.nupkg.sha512"
+    },
+    "NETStandard.Library/2.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-7jnbRU+L08FXKMxqUflxEXtVymWvNOrS8yHgu9s6EM8Anr6T/wIX4nZ08j/u3Asz+tCufp3YVwFSEvFTPYmBPA==",
+      "path": "netstandard.library/2.0.0",
+      "hashPath": "netstandard.library.2.0.0.nupkg.sha512"
+    },
+    "Newtonsoft.Json/12.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-6mgjfnRB4jKMlzHSl+VD+oUc1IebOZabkbyWj2RiTgWwYPPuaK1H97G1sHqGwPlS5npiF5Q0OrxN1wni2n5QWg==",
+      "path": "newtonsoft.json/12.0.3",
+      "hashPath": "newtonsoft.json.12.0.3.nupkg.sha512"
+    },
+    "NUnit/3.13.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-vWBvrSelmTYwqHWvO3dA63z7cOpaFR/3nJ9MMVLBkWeaWa7oiglPPm5g1h96B4i2XXqjFexxhR5MyMjmIJYPfg==",
+      "path": "nunit/3.13.1",
+      "hashPath": "nunit.3.13.1.nupkg.sha512"
+    },
+    "NUnitTestAdapter/2.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-I45o6jTH2CY5z8LtflmJn5DsFhzcDxjDlSm3NE6CUsc9Ms8nvA+1wqRmcXpu7uV3IcGK8mSHVr9nBwDbL8jw4A==",
+      "path": "nunittestadapter/2.3.0",
+      "hashPath": "nunittestadapter.2.3.0.nupkg.sha512"
+    },
+    "Selenium.Support/4.0.0-beta1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-X/HHsWQHytn2kpuoXlO2NvCRpMcvtjITtVNyi6QKvAUbdP8en1C1ps15Y6TuIVOa3M3K52H4oIQZF1DtkiiBaw==",
+      "path": "selenium.support/4.0.0-beta1",
+      "hashPath": "selenium.support.4.0.0-beta1.nupkg.sha512"
+    },
+    "Selenium.WebDriver/4.0.0-beta1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Bb6dhAFx4R3e09dv7AqY96rkYD2d7tcWvC3Knb45H0UlFu2nPkaqcPWAu8096FJYfqI67OV5KKo3MyvAGpMKpw==",
+      "path": "selenium.webdriver/4.0.0-beta1",
+      "hashPath": "selenium.webdriver.4.0.0-beta1.nupkg.sha512"
+    }
+  }
+}
