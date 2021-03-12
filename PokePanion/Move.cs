@@ -1,26 +1,47 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 
 namespace PokePanion
 {
     public class Move
     {
-        public string Name, Type;
-        public int Power, Pp;
-        public double Accuracy;
-        public int? EffectRate;
-
         /// <summary>
-        /// Parametric Move Constructor
+        /// The name of this move.
         /// </summary>
-        /// <param name="name">Name of Move</param>
-        /// <param name="type">Type of Move</param>
-        /// <param name="power">Base Power of Move</param>
-        /// <param name="accuracy">Accuracy Rating of Move</param>
-        /// <param name="pp">Power Points of Move</param>
-        /// <param name="effectRate">Percent Chance of Effect</param>
-        public Move(string name = null, string type = null, int power = default, double accuracy = default, int pp = default, int? effectRate = default)
+        public string Name; 
+        /// <summary>
+        /// The type of this move.
+        /// </summary>
+        public string Type;
+        /// <summary>
+        /// The base attack power of this move.
+        /// </summary>
+        public int Power; 
+        /// <summary>
+        /// The Power Points of this move.
+        /// </summary>
+        public int Pp;
+        /// <summary>
+        /// The accuracy rating of this move.
+        /// </summary>
+        public double Accuracy;
+        /// <summary>
+        /// The percent chance for this move's effect to trigger, if applicable.
+        /// </summary>
+        public int? EffectRate;
+        /// <summary>
+        /// All Pokemon that can learn this move by leveling.
+        /// </summary>
+        public List<string> LearnedByLevel;
+        /// <summary>
+        /// All Pokemon that can be taught this move with a TM.
+        /// </summary>
+        public List<string> LearnedByTm;
+        
+        public Move(string name = null, string type = null, int power = default, double accuracy = default, 
+            int pp = default, int? effectRate = default, List<string> learnedByLevel = null , List<string> learnedByTm = null)
         {
             Name = name;
             Type = type;
@@ -28,6 +49,8 @@ namespace PokePanion
             Accuracy = accuracy;
             Pp = pp;
             EffectRate = effectRate;
+            LearnedByLevel = learnedByLevel;
+            LearnedByTm = learnedByTm;
         }
         
         /// <summary>
@@ -41,22 +64,21 @@ namespace PokePanion
             {
                 while (true)
                 {
-                    string[] moveTxt;
+                    string[] dataGroups;
                     try
                     {
-                        moveTxt = reader.ReadLine().Split(", ");
+                        dataGroups = reader.ReadLine().Split("| ");
                     }
                     catch (NullReferenceException)
                     {
                         break;
                     }
-                    allMoves[moveTxt[0].ToLower()] = new Move(moveTxt[0], moveTxt[1], Convert.ToInt32(moveTxt[2]),
-                        Convert.ToDouble(moveTxt[3]), Convert.ToInt32(moveTxt[4]));
-                    
-                    if (moveTxt[5] != "")
-                    {
-                        allMoves[moveTxt[0].ToLower()].EffectRate = Convert.ToInt32(moveTxt[5]);
-                    }
+                    var basics = dataGroups[0].Split(", ");
+                    List<string> byLevels = dataGroups[1].Split(", ").ToList(), byTm = dataGroups[2].Split(", ").ToList();
+
+                    int? effectRate = basics[5] != "" ? Convert.ToInt32(basics[5]) : null;
+                    allMoves[basics[0].ToLower()] = new Move(basics[0],
+                        basics[1], Convert.ToInt32(basics[2]), Convert.ToDouble(basics[3]), Convert.ToInt32(basics[4]), effectRate, byLevels, byTm);
                 }
             }
             return allMoves;
@@ -77,9 +99,16 @@ namespace PokePanion
         /// <summary>
         /// Displays all information of a Move
         /// </summary>
-        public void WriteMove()
+        public void WriteMove() // Todo: Update for Learned by
         {
-            Console.WriteLine($"{Name} is a {Type} move with base power {Power} and accuracy {Accuracy}.");
+            if (Type == "Electric" || Type == "Ice")
+            {
+                Console.WriteLine($"{Name} is an {Type} move with base power {Power} and accuracy {Accuracy}.");
+            }
+            else
+            {
+                Console.WriteLine($"{Name} is an {Type} move with base power {Power} and accuracy {Accuracy}.");
+            }
             Console.Write($"{Name} can be used {Pp} times");
             if (EffectRate is null)
             {
@@ -87,7 +116,7 @@ namespace PokePanion
             }
             else
             {
-                Console.WriteLine($"and its effect occurs {EffectRate}% of the time.");
+                Console.WriteLine($" and its effect occurs {EffectRate}% of the time.");
             }
             Console.WriteLine();
         }

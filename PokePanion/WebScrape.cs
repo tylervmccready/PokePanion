@@ -8,81 +8,30 @@ namespace PokePanion
     public class WebScrape
     {
         /// <summary>
-        /// Creates a list of all move names by scraping web and writes it to MoveNames.txt
+        /// Collects all move names by scraping web and writes them to MoveNames.txt
         /// </summary>
         /// <param name="driver">Initialized WebDriver</param>
-        /// <param name="allPokemon">Dictionary of names, Pokemon</param>
-        public static void CreateMoveNameFile(IWebDriver driver, Dictionary<string, Pokemon> allPokemon)
+        public static void CreateMoveNameFile(IWebDriver driver)
         {
-
-            // Creates list of all move names
-            var moveNameList = new List<string>();
-            foreach (var pokemon in allPokemon)
+            using var writer = new StreamWriter("MoveNames.txt");
+            driver.Navigate().GoToUrl("https://www.serebii.net/attackdex-rby/");
+            for (int moveInc = 2, listInc = 1; listInc < 4; moveInc++)
             {
-                driver.Navigate().GoToUrl($"https://serebii.net/pokedex/{Convert.ToInt32(pokemon.Value.Basics[1]):000}.shtml");
-                for (var i = 3; ; i += 2)
+                try
                 {
-                    // var layout = 1;
-                    string moveName;
-                    try // Creates Move
+                    var move = driver.FindElement(By.CssSelector(
+                            $"#content > main > div:nth-child(3) > table > tbody > tr > td:nth-child({listInc}) > form > div > select > option:nth-child({moveInc})"))
+                        .Text;
+                    if (move == "Sand Attack")
                     {
-                        moveName = driver.FindElement(By.CssSelector(
-                                $"#content > main > div > div > table:nth-child(13) > tbody > tr:nth-child({i}) > td:nth-child(2) > a"))
-                            .Text;
+                        move = "Sand-Attack";
                     }
-                    catch // Catches different table layouts
-                    {
-                        try
-                        {
-                            moveName = driver.FindElement(By.CssSelector(
-                                    $"#content > main > div > div > table:nth-child(14) > tbody > tr:nth-child({i}) > td:nth-child(2) > a"))
-                                .Text;
-                            // layout = 2;
-                        }
-                        catch (NoSuchElementException)
-                        {
-                            break;
-                        }
-                    }
-                    if (!moveNameList.Contains(moveName))
-                    {
-                        moveNameList.Add(moveName);
-                    }
-                    
-                    // Tentative start for collecting TM/HM moves
-                    /*string tmhmName;
-                    try // Creates Move
-                    {
-                        tmhmName = driver.FindElement(By.CssSelector(
-                                $"#content > main > div > div > table:nth-child(14) > tbody > tr:nth-child({i}) > td:nth-child(2) > a"))
-                            .Text;
-                    }
-                    catch // Catches different table layouts
-                    {
-                        try
-                        {
-                            tmhmName = driver.FindElement(By.CssSelector(
-                                    $"#content > main > div > div > table:nth-child(14) > tbody > tr:nth-child({i}) > td:nth-child(2) > a"))
-                                .Text;
-                        }
-                        catch (NoSuchElementException)
-                        {
-                            break;
-                        }
-                    }
-                    if (!moveNameList.Contains(tmhmName))
-                    {
-                        moveNameList.Add(tmhmName);
-                    }*/
+                    writer.WriteLine(move);
                 }
-            }
-
-            // Writes list of all move names to a .txt
-            using (var writer = new StreamWriter("MoveNames.txt"))
-            {
-                foreach (var move in moveNameList)
+                catch (NoSuchElementException)
                 {
-                    writer.WriteLine($"{move}, ");
+                    moveInc = 1;
+                    listInc++;
                 }
             }
         }
@@ -94,57 +43,124 @@ namespace PokePanion
         public static void CreateMovesDataFile(IWebDriver driver)
         {
             // Create objects for all moves, with just the name, from list stored in a .txt
-            var moveNames = new List<Move>();
-            using (var reader = new StreamReader("MoveNames.txt"))
+            var writer = new StreamWriter("MoveData.txt");
+            using var reader = new StreamReader("MoveNames.txt");
+            var i = 0;
+            while (true)
             {
-                while (true)
-                {
-                    var move = reader.ReadLine()?.Replace(",", "").Trim();
-                    if (move is null){break;}
-                    moveNames.Add( new Move(move));
-                }
-            }
-            
-            // Scrapes move data from Serebii and stores in an array of Moves type
-            foreach (var move in moveNames)
-            {
+                var move = reader.ReadLine()?.Replace(",", "").Trim();
+                if (move is null){break;}
+                // moveNames.Add( new Move(move));
                 driver.Navigate()
-                    .GoToUrl($"https://serebii.net/attackdex-rby/{move.Name.ToLower().Replace(" ", "")}.shtml");
+                    .GoToUrl($"https://serebii.net/attackdex-rby/{move.ToLower().Replace(" ", "")}.shtml");
                 
-                move.Type = driver.FindElement(By.CssSelector(
+                var type = driver.FindElement(By.CssSelector(
                         "#content > main > table:nth-child(7) > tbody > tr:nth-child(2) > td:nth-child(2) > a > img"))
                     .GetProperty("src").Substring(36).Replace(".gif", "");
                 
-                move.Power = Convert.ToInt32(driver.FindElement(By.CssSelector(
-                        "#content > main > table:nth-child(7) > tbody > tr:nth-child(4) > td:nth-child(2)")).Text);
+                var power = Convert.ToInt32(driver.FindElement(By.CssSelector(
+                    "#content > main > table:nth-child(7) > tbody > tr:nth-child(4) > td:nth-child(2)")).Text);
 
-                move.Accuracy = Convert.ToDouble(driver.FindElement(By.CssSelector(
-                        "#content > main > table:nth-child(7) > tbody > tr:nth-child(4) > td:nth-child(3)")).Text);
+                var accuracy = Convert.ToDouble(driver.FindElement(By.CssSelector(
+                    "#content > main > table:nth-child(7) > tbody > tr:nth-child(4) > td:nth-child(3)")).Text);
 
-                move.Pp = Convert.ToInt32(driver.FindElement(By.CssSelector(
+                var pp = Convert.ToInt32(driver.FindElement(By.CssSelector(
                     "#content > main > table:nth-child(7) > tbody > tr:nth-child(4) > td:nth-child(1)")).Text);
 
+                int? effectRate;
                 try
                 {
-                    move.EffectRate = Convert.ToInt32(driver
+                    effectRate = Convert.ToInt32(driver
                         .FindElement(By.CssSelector(
                             "#content > main > table:nth-child(7) > tbody > tr:nth-child(8) > td.cen")).Text
                         .Replace("%", "").Trim());
                 }
                 catch
                 {
-                    move.EffectRate = null;
+                    effectRate = null;
                 }
-            }
 
-            // Writes all Move data to MoveData.txt
-            using (var writer = new StreamWriter("MoveData.txt"))
-            {
-                foreach (var move in moveNames)
+                var byLevels = new List<string>();
+                for (int pokeIdx = 3; ; pokeIdx++)
                 {
-                    writer.WriteLine($"{move.Name}, {move.Type}, {move.Power}, {move.Accuracy}, {move.Pp}, {move.EffectRate}");
+                    try
+                    {
+                        byLevels.Add(driver
+                            .FindElement(By.CssSelector(
+                                $"#content > main > table:nth-child(9) > tbody > tr:nth-child({pokeIdx}) > td:nth-child(3) > a"))
+                            .Text);
+                    }
+                    catch (NoSuchElementException)
+                    {
+                        break;
+                    }
+                }
+
+                int layout;
+                var byTm = new List<string>();
+                try
+                {
+                    driver.FindElement(By.CssSelector(
+                        "#content > main > table:nth-child(9) > tbody > tr:nth-child(3) > td:nth-child(3) > a"));
+                    layout = 1;
+                }
+                catch (NoSuchElementException)
+                {
+                    layout = 2;
+                }
+                for (int pokeIdx = 3; layout < 3; pokeIdx++)
+                {
+                    switch (layout)
+                    {
+                        case 1:
+                            try
+                            {
+                                byTm.Add(driver.FindElement(By.CssSelector(
+                                        $"#content > main > table:nth-child(10) > tbody > tr:nth-child({pokeIdx}) > td:nth-child(3) > a"))
+                                    .Text);
+                            }
+                            catch (NoSuchElementException)
+                            {
+                                layout = 3;
+                            }
+                            break;
+                        case 2:
+                            try
+                            {
+                                byTm.Add(driver.FindElement(By.CssSelector(
+                                        $"#content > main > table:nth-child(12) > tbody > tr:nth-child({pokeIdx}) > td:nth-child(3) > a"))
+                                    .Text);
+                            }
+                            catch (NoSuchElementException)
+                            {
+                                layout = 3;
+                            }
+                            break;
+                    }
+                }
+                writer.Write($"{move}, {type}, {power}, {accuracy}, {pp}, {effectRate}| ");
+                foreach (var pokemon in byLevels)
+                {
+                    writer.Write($"{pokemon}, ");
+                }
+
+                writer = RemoveLastTwo(writer, "MoveData.txt");
+                writer.Write("| ");
+                
+                foreach (var pokemon in byTm)
+                {
+                    writer.Write($"{pokemon}, ");
+                }
+
+                writer = RemoveLastTwo(writer, "MoveData.txt");
+                writer.WriteLine();
+                i++;
+                if (i % 50 == 0)
+                {
+                    Console.WriteLine($"Data for {i} moves has been collected!");
                 }
             }
+            writer.Close();
         }
 
         /// <summary>
@@ -159,11 +175,9 @@ namespace PokePanion
         {
             try
             {
-                // Scrapes pokemon data from Serebii, stores in a dictionary of strings and pokemon,
-                // and writes to a text file
                 using (var writer = new StreamWriter("PokemonData.txt"))
                 {
-                    // driver.Manage().Window.Minimize();
+                    int i = 0;
                     foreach (var pokemon in pokeDex)
                     {
                         writer.Write($"{pokemon.Key}, {pokemon.Value.Basics[1]}, ");
@@ -295,6 +309,11 @@ namespace PokePanion
                             writer.Write($"{evoItem}, ");
                         }
                         writer.WriteLine();
+                        i++;
+                        if (i % 50 == 0)
+                        {
+                            Console.WriteLine($"Data for {i} Pokemon has been collected!");
+                        }
                     }
                 }
             }
@@ -333,51 +352,68 @@ namespace PokePanion
         /// </summary>
         /// <param name="driver">Initialized WebDriver</param>
         /// <returns>List(int)</returns>
-        public static List<int> FindMoveLevels(IWebDriver driver)
+        public static List<string> FindMoveLevels(IWebDriver driver)
         {
-            var moveLevels = new List<int>();
-            var elemIdx = 3;
-            while (true)
+            var moveLevels = new List<string>();
+            int layout, tableIdx, elemIdx;
+            string level = null;
+            try
             {
-                string level;
-                int intLevel;
-                try // stores move level value
-                {
-                    level = driver.FindElement(By.CssSelector(
-                            $"#content > main > div > div > table:nth-child(13) > tbody > tr:nth-child({elemIdx}) > td:nth-child(1)"))
-                        .Text;
-                }
-                catch (NoSuchElementException) // Catches errors from different table layout
-                {
-                    try // stores move level value for different table layout
-                    {
-                        level = driver.FindElement(By.CssSelector(
-                                $"#content > main > div > div > table:nth-child(14) > tbody > tr:nth-child({elemIdx}) > td:nth-child(1)"))
-                            .Text;
-                    }
-                    catch (NoSuchElementException) // Catches end of moves table
-                    {
-                        break;
-                    }
-                }
-
-                try // Converts move level to int
-                {
-                    if (level == "—")
-                    {
-                        level = "1";
-                    }
-                    intLevel = Convert.ToInt32(level);
-                }
-                catch (FormatException) // Catches end of level up moves table
-                {
-                    break;
-                }
-                        
-                moveLevels.Add(intLevel);
-                elemIdx += 2;
+                driver.FindElement(By.CssSelector(
+                    "#content > main > div > div > table:nth-child(13) > tbody > tr:nth-child(3) > td:nth-child(2) > a"));
+                layout = 1;
+                tableIdx = 13;
+            }
+            catch (NoSuchElementException)
+            {
+                layout = 2;
+                tableIdx = 14;
             }
 
+            for (elemIdx = 3; ; elemIdx += 2)
+            {
+                switch (layout)
+                {
+                    case 1:
+                        try
+                        {
+                            level = driver.FindElement(By.CssSelector(
+                                    $"#content > main > div > div > table:nth-child({tableIdx}) > tbody > tr:nth-child({elemIdx}) > td:nth-child(1)"))
+                                .Text;
+                        }
+                        catch (NoSuchElementException)
+                        {
+                            if (tableIdx == 14){layout = 3;}
+                            tableIdx++;
+                            elemIdx = 1;
+                        }
+                        break;
+                    case 2:
+                        try
+                        {
+                            level = driver.FindElement(By.CssSelector(
+                                    $"#content > main > div > div > table:nth-child({tableIdx}) > tbody > tr:nth-child({elemIdx}) > td:nth-child(1)"))
+                                .Text;
+                        }
+                        catch (NoSuchElementException)
+                        {
+                            if (tableIdx == 18){layout = 3;}
+                            tableIdx += 4;
+                            elemIdx = 1;
+                        }
+                        break;
+                }
+                
+                if (layout == 3 || level == ""){break;}
+                if (elemIdx == 1){continue;}
+
+                if (level.Length > 5)
+                {
+                    level = level.Substring(0, 4);
+                }
+                
+                moveLevels.Add(level.ToUpper());
+            }
             return moveLevels;
         }
 
@@ -387,41 +423,62 @@ namespace PokePanion
         /// <param name="driver">Initialized WebDriver</param>
         /// <param name="movesDex">Dictionary of Moves</param>
         /// <returns>Dictionary of levels and moves learned</returns>
-        public static (List<int> moveLevels, List<Move>) FindLevelUpMoves(IWebDriver driver, Dictionary<string, Move> movesDex)
+        public static (List<string> moveLevels, List<Move>) FindLevelUpMoves(IWebDriver driver, Dictionary<string, Move> movesDex)
         {
             var moveLevels = FindMoveLevels(driver);
             var levelUpMoves = (moveLevels, new List<Move>());
-            var elemIdx = 3;
-            for (; levelUpMoves.Item2.Count < moveLevels.Count; elemIdx += 2) 
-                // Stops program from passing end of level up moves table
+            int layout, tableIdx, elemIdx;
+            string moveName = null;
+            try
             {
-                string moveName;
-                try // stores move name
-                {
-                    moveName = driver.FindElement(By.CssSelector(
-                            $"#content > main > div > div > table:nth-child(13) > tbody > tr:nth-child({elemIdx}) > td:nth-child(2)"))
-                        .Text;
-                }
-                catch (NoSuchElementException)
-                {
-                    try // stores move name for different table layout
-                    {
-                        moveName = driver.FindElement(By.CssSelector(
-                                $"#content > main > div > div > table:nth-child(14) > tbody > tr:nth-child({elemIdx}) > td:nth-child(2)"))
-                            .Text;
-                        if (moveName == "") // Accounts for Kakuna's weird layout
-                        {
-                            break;
-                        }
-                    }
-                    catch (NoSuchElementException) // Catches end of moves table
-                    {       
-                        break;
-                    }
-                }
-                levelUpMoves.Item2.Add(movesDex[moveName.ToLower()]);
+                driver.FindElement(By.CssSelector(
+                    "#content > main > div > div > table:nth-child(13) > tbody > tr:nth-child(3) > td:nth-child(2) > a"));
+                layout = 1;
+                tableIdx = 13;
+            }
+            catch (NoSuchElementException)
+            {
+                layout = 2;
+                tableIdx = 14;
             }
 
+            for (elemIdx = 3; ; elemIdx += 2)
+            {
+                switch (layout)
+                {
+                    case 1:
+                        try
+                        {
+                            moveName = driver.FindElement(By.CssSelector(
+                                    $"#content > main > div > div > table:nth-child({tableIdx}) > tbody > tr:nth-child({elemIdx}) > td:nth-child(2)"))
+                                .Text;
+                        }
+                        catch (NoSuchElementException)
+                        {
+                            if (tableIdx == 14){layout = 3;}
+                            tableIdx++;
+                            elemIdx = 1;
+                        }
+                        break;
+                    case 2:
+                        try
+                        {
+                            moveName = driver.FindElement(By.CssSelector(
+                                    $"#content > main > div > div > table:nth-child({tableIdx}) > tbody > tr:nth-child({elemIdx}) > td:nth-child(2)"))
+                                .Text;
+                        }
+                        catch (NoSuchElementException)
+                        {
+                            if (tableIdx == 18){layout = 3;}
+                            tableIdx += 4;
+                            elemIdx = 1;
+                        }
+                        break;
+                }
+                if (layout == 3 || moveName == ""){break;}
+                if (elemIdx == 1){continue;}
+                levelUpMoves.Item2.Add(movesDex[moveName.ToLower()]);
+            }
             return levelUpMoves;
         }
 
@@ -466,6 +523,21 @@ namespace PokePanion
             return driver.FindElement(By.CssSelector(
                     $"#content > main > div > div > table:nth-child(8) > tbody > tr:nth-child(2) > td > table > tbody > tr > td:nth-child({evoNum * 2 - 2}) > a > img"))
                 .GetProperty("src").Substring(39).Replace(".png", "");
+        }
+
+        /// <summary>
+        /// Deletes the last two characters from a file and continues StreamWriter on same line.
+        /// </summary>
+        /// <param name="writer">Current StreamWriter</param>
+        /// <param name="filename">File to work with</param>
+        /// <returns>StreamWriter</returns>
+        public static StreamWriter RemoveLastTwo(StreamWriter writer, string filename)
+        {
+            writer.Close();
+            var rewriter = File.ReadAllText(filename);
+            rewriter = rewriter.Remove(rewriter.Length - 2);
+            File.WriteAllText(filename, rewriter);
+            return File.AppendText(filename);
         }
     }
 }

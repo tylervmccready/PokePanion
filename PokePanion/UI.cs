@@ -69,15 +69,16 @@ namespace PokePanion
         }
 
         /// <summary>
-        /// Gives user choices for displaying Pokemon information
+        /// Gives choices for displaying Pokemon information
         /// </summary>
-        /// <param name="pokemon">Pokemon they would like information on</param>
+        /// <param name="pokemon">Pokemon you would like information on</param>
         public static void PokemonInformation(Pokemon pokemon)
         {
             Console.WriteLine("Please select the information you would like for this pokemon:");
             Console.WriteLine($"1\tAll moves learned by {pokemon.Basics[0]} via leveling");
             Console.WriteLine($"2\tNext move {pokemon.Basics[0]} will learn by leveling");
-            Console.WriteLine($"3\tDisplay evolution line for {pokemon.Basics[0]}");
+            Console.WriteLine($"3\tAll TMs {pokemon.Basics[0]} can learn");
+            Console.WriteLine($"4\tDisplay evolution line for {pokemon.Basics[0]}");
             
             try
             {
@@ -85,7 +86,7 @@ namespace PokePanion
                 switch (selection)
                 {
                     case 1:
-                        Pokemon.DisplayLearnedMoves(pokemon);
+                        pokemon.DisplayNaturalMoves();
                         break;
                     case 2:
                         Console.WriteLine("What level is your pokemon?");
@@ -93,6 +94,9 @@ namespace PokePanion
                         pokemon.NextLearnedMove();
                         break;
                     case 3:
+                        pokemon.DisplayTMs();
+                        break;
+                    case 4:
                         pokemon.DisplayEvolutions();
                         break;
                 }
@@ -120,7 +124,7 @@ namespace PokePanion
                         move.WriteMove();
                         break;
                     case 2:
-
+                        // Todo: Add options for displaying Learned By
                         break;
                     case 3:
 

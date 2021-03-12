@@ -4,9 +4,36 @@ using System.IO;
 
 namespace PokePanion
 {
+    
     public class Pokemon
     {
-        public string[] Basics, MoveLevels, Moves, EvoLevels, EvoNames, EvoItems;
+        /// <summary>
+        /// Contains the Name, Dex Number, Primary Type, and Secondary Type of a Pokemon.
+        /// </summary>
+        public string[] Basics;
+        /// <summary>
+        /// Contains the levels this Pokemon learns moves at, or the TM/HM numbers for teachable moves.
+        /// </summary>
+        public string[] MoveLevels;
+        /// <summary>
+        /// Contains the names of all moves this Pokemon can learn.
+        /// </summary>
+        public string[] Moves;
+        /// <summary>
+        /// Contains the levels this Pokemon evolves at, or null if not applicable.
+        /// </summary>
+        public string[] EvoLevels;
+        /// <summary>
+        /// Contains the names of this Pokemon's evolutions.
+        /// </summary>
+        public string[] EvoNames;
+        /// <summary>
+        /// Contains the items used to trigger this Pokemon's evolution, or null if not applicable.
+        /// </summary>
+        public string[] EvoItems;
+        /// <summary>
+        /// The current level of this Pokemon.
+        /// </summary>
         public int Level;
 
         public Pokemon(string[] basics = null, string[] moveLevels = null, string[] moves = null, 
@@ -91,24 +118,31 @@ namespace PokePanion
         
 
         /// <summary>
-        /// Displays table of learned moves for a given pokemon
+        /// Displays table of moves learned exclusively through leveling for this pokemon
         /// </summary>
-        /// <param name="pokemon">Pokemon to reference</param>
-        public static void DisplayLearnedMoves(Pokemon pokemon)
+        public void DisplayNaturalMoves()
         {
-            try
-            {
-                Console.WriteLine($"{pokemon.Basics[0]} learns the following moves:");
-            }
-            catch (IndexOutOfRangeException) // Checks for empty array
-            {
-                Console.WriteLine($"{pokemon} isn't a recognized pokemon name. Please check your spelling and try again.");
-                return;
-            }
+            Console.WriteLine($"{Basics[0]} learns the following moves:");
             Console.WriteLine("Level\tMove");
-            for (int i = 0; i < pokemon.MoveLevels.Length; i++)
+            for (int i = 0; !MoveLevels[i].StartsWith("TM") && !MoveLevels[i].StartsWith("HM"); i++)
             {
-                Console.WriteLine($"{pokemon.MoveLevels[i]}\t{pokemon.Moves[i]}");
+                Console.WriteLine($"{MoveLevels[i]}\t{Moves[i]}");
+            }
+        }
+        
+        /// <summary>
+        /// Displays table of learnable TMs for this pokemon
+        /// </summary>
+        public void DisplayTMs()
+        {
+            Console.WriteLine($"{Basics[0]} learns the following moves:");
+            Console.WriteLine("TM\tMove");
+            for (int i = 0; i < MoveLevels.Length; i++)
+            {
+                if (MoveLevels[i].StartsWith("TM") || MoveLevels[i].StartsWith("HM"))
+                {
+                    Console.WriteLine($"{MoveLevels[i]}\t{Moves[i]}");
+                }
             }
         }
 
@@ -120,6 +154,11 @@ namespace PokePanion
             int idx;
             for (idx = 0; Level >= Convert.ToInt32(MoveLevels[idx]); idx++){}
 
+            if (MoveLevels[idx].StartsWith("TM") || MoveLevels[idx].StartsWith("HM"))
+            {
+                Console.WriteLine($"{Basics[0]} has no more moves to learn by leveling.");
+                return;
+            }
             Console.WriteLine($"{Basics[0]} will learn {Moves[idx]} at level {MoveLevels[idx]}.");
         }
         
@@ -133,13 +172,18 @@ namespace PokePanion
             for (int i = 0; i < EvoNames.Length - 1; i++)
             {
                 string item = EvoItems[i] == "" ? "N/A" : EvoItems[i];
+                if (item.Contains("stone"))
+                {
+                    item = item[0].ToString().ToUpper() + item.Substring(1).Replace("stone", " Stone");
+                }
+                string evoLevel = EvoLevels[i] == "" ? "N/A" : EvoLevels[i];
                 if (EvoNames[i].Length > 7)
                 {
-                    Console.WriteLine($"{EvoLevels[i]}\t{EvoNames[i]}\t{item}");
+                    Console.WriteLine($"{evoLevel}\t{EvoNames[i]}\t{item}");
                 }
                 else
                 {
-                    Console.WriteLine($"{EvoLevels[i]}\t{EvoNames[i]}\t\t{item}");
+                    Console.WriteLine($"{evoLevel}\t{EvoNames[i]}\t\t{item}");
                 }
             }
         }

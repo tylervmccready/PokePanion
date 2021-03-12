@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
+using System.Threading;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Edge;
@@ -14,6 +16,17 @@ namespace PokePanion
         /// </summary>
         static void Main()
         {
+            var writer = new StreamWriter("Test.txt");
+            writer.Write("Test");
+            writer.Close();
+            var rewriter = File.ReadAllText("Test.txt");
+            rewriter = rewriter.Remove(rewriter.Length - 2) + "| ";
+            File.WriteAllText("Test.txt", rewriter);
+            writer = File.AppendText("Test.txt");
+            writer.Write("st");
+            writer.Close();
+            Console.ReadLine();
+            
             Dictionary<string, Pokemon> pokeDex;
             Dictionary<string, Move> moveDex;
             if (UI.LocalOrWeb()) // Builds data files from web if user chooses to do so
@@ -48,21 +61,19 @@ namespace PokePanion
                 var dexDict = dexes.Item2;
             
                 // Create text file with list of Move Names
-                // Warning: Searches web and takes ~3 minutes to complete
-                WebScrape.CreateMoveNameFile(driver, pokeDexInit);
+                WebScrape.CreateMoveNameFile(driver);
+                Console.ResetColor();
+                Console.WriteLine("Move Names file created.");
             
                 // Create MoveData.txt
-                // Warning: Searches web and takes ~3 minutes to complete
                 WebScrape.CreateMovesDataFile(driver);
             
                 // Create local MoveDex
                 moveDex = Move.CreateMoveDex();
-
-                Console.ResetColor();
-                Console.WriteLine("Files approximately 50% complete.");
+                
+                Console.WriteLine("Moves data file created.");
                 
                 // Create PokemonData.txt
-                // Warning: Searches web and takes ~5 minutes to complete
                 WebScrape.CreatePokemonDataFile(driver, pokeDexInit, moveDex, dexDict);
                 
                 // Create local PokeDex
@@ -88,6 +99,9 @@ namespace PokePanion
             Console.WriteLine("Would you like more information?");
             answer = Console.ReadLine();
             if (answer.ToLower().Contains("y")){goto Restart;}
+            Console.WriteLine("Goodbye!");
+            Thread.Sleep(1000);
+            Environment.Exit(0);
         }
     }
 }
