@@ -21,7 +21,7 @@ Once PokePanion has displayed the requested information, it will the ask the use
 ### File Creation
 WebScraping.cs contains most of the code that enables PokePanion to scrape the web. PokePanion uses Selenium packages for C# to extract data from CSS elements of Serebii.net. There are several loops, some nested, to enable collecting information for each pokemon and move, including data from multiple tables on each page. There is a significant amount of error-handling required to keep this portion of the program running, as there's no easy way to tell how long these tables will be as they change on each Pokemon or Move's page, and the layout of the webpage isn't always 100% consistent. I will picture the primary part of the WebScraping class below. However, for more details and expanded comments, please feel free to view the source code.
 
-![WebScrape.cs Snapshot](WebScraping Snapshot.png?raw=true "WebScrape.cs Snapshot")
+![WebScrape.cs Snapshot]([WebScraping Snapshot.png]?raw=true "WebScrape.cs Snapshot")
 
 ### Pokemon and Move Classes
 Pokemon.cs and Move.cs contain classes defining what attributes a Pokemon and a Move will have, as well as several methods related to creating the Dexes and displaying Pokemon and Move information. I will picture the primary part of the two classes below. However, for more details and expanded comments, please feel free to view the source code.
