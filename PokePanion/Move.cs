@@ -49,7 +49,8 @@ namespace PokePanion
         public List<string> LearnedByTm { get; }
 
         private Move(string name = null, string type = null, int power = default, double accuracy = default, 
-            int pp = default, int? effectRate = default, List<string> learnedByLevel = null , List<string> learnedByTm = null)
+            int pp = default, int? effectRate = default, List<string> learnedByLevel = null , 
+            List<string> learnedByTm = null)
         {
             Name = name;
             Type = type;

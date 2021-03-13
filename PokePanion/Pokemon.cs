@@ -133,7 +133,15 @@ namespace PokePanion
                         break;
                     case 2:
                         Console.WriteLine("What level is your pokemon?");
-                        Level = Convert.ToInt32(Console.ReadLine());
+                        try
+                        {
+                            Level = Convert.ToInt32(Console.ReadLine());
+                        } // Prevent non-integer inputs for levels
+                        catch (FormatException)
+                        {
+                            Console.WriteLine("Please enter only an integer representing your Pokemon's current Level.");
+                            PokemonInformation(moveDex);
+                        }
                         NextLearnedMove();
                         break;
                     case 3:
@@ -199,14 +207,22 @@ namespace PokePanion
         private void NextLearnedMove()
         {
             int idx;
-            for (idx = 0; Level >= Convert.ToInt32(MoveLevels[idx]); idx++){}
-
-            // Checks if Pokemon has any moves left to learn
-            if (MoveLevels[idx].StartsWith("TM") || MoveLevels[idx].StartsWith("HM"))
+            for (idx = 0;; idx++)
             {
-                Console.WriteLine($"{Basics[0]} has no more moves to learn by leveling.");
-                return;
+                // Skips starting moves
+                if (MoveLevels[idx] == "—"){continue;}
+                
+                // Checks if Pokemon has any moves left to learn
+                if (MoveLevels[idx].StartsWith("TM") || MoveLevels[idx].StartsWith("HM"))
+                {
+                    Console.WriteLine($"{Basics[0]} has no more moves to learn by leveling.");
+                    return;
+                }
+                
+                // Breaks when first level greater than Pokemon's current level is found
+                if (Level <= Convert.ToInt32(MoveLevels[idx])){break;}
             }
+            // Displays next move if applicable
             Console.WriteLine($"{Basics[0]} will learn {Moves[idx]} at level {MoveLevels[idx]}.");
         }
         

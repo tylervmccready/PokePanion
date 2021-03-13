@@ -35,7 +35,8 @@ namespace PokePanion
         /// <param name="answer">User's MoveOrPokemon answer</param>
         /// <param name="pokeDex">Initialized PokeDex</param>
         /// <param name="moveDex">Initialized MoveDex</param>
-        public static void InformationRouter(string answer, Dictionary<string, Pokemon> pokeDex, Dictionary<string, Move> moveDex)
+        public static void InformationRouter(string answer, Dictionary<string, Pokemon> pokeDex, 
+            Dictionary<string, Move> moveDex)
         {
             switch (answer.ToLower().Contains("move")) // 
             {
