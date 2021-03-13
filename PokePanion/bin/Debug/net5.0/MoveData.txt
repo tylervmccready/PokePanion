@@ -1,165 +1,165 @@
-Absorb, grass, 20, 100, 20, 
-Acid, poison, 40, 100, 30, 33
-Acid Armor, poison, 0, 100, 40, 
-Agility, psychic, 0, 100, 30, 
-Amnesia, psychic, 0, 100, 20, 
-Aurora Beam, ice, 65, 100, 20, 33
-Barrage, normal, 15, 85, 20, 
-Barrier, psychic, 0, 100, 30, 
-Bide, normal, 0, 100, 10, 
-Bind, normal, 15, 74.6, 20, 
-Bite, normal, 60, 100, 25, 10
-Blizzard, ice, 120, 90, 5, 10
-Body Slam, normal, 85, 100, 15, 33
-Bone Club, ground, 65, 85, 20, 10
-Bonemerang, ground, 50, 90, 10, 
-Bubble, water, 20, 100, 30, 30
-Bubble Beam, water, 65, 100, 20, 33
-Clamp, water, 35, 75, 10, 
-Comet Punch, normal, 18, 85, 15, 
-Confuse Ray, ghost, 0, 100, 10, 
-Confusion, psychic, 50, 100, 25, 10
-Constrict, normal, 10, 100, 35, 10
-Conversion, normal, 0, 100, 30, 
-Counter, fighting, 1, 100, 20, 
-Crabhammer, water, 90, 85, 10, 
-Cut, normal, 50, 95, 30, 
-Defense Curl, normal, 0, 100, 40, 
-Dig, ground, 100, 100, 10, 
-Disable, normal, 0, 55, 20, 
-Dizzy Punch, normal, 70, 100, 10, 20
-Double-Edge, normal, 100, 100, 15, 
-Double Kick, fighting, 30, 100, 30, 
-Double Slap, normal, 15, 85, 10, 
-Double Team, normal, 0, 100, 15, 
-Dragon Rage, dragon, 1, 100, 10, 
-Dream Eater, psychic, 100, 100, 15, 
-Drill Peck, flying, 80, 100, 20, 
-Earthquake, ground, 100, 100, 10, 
-Egg Bomb, normal, 100, 75, 10, 
-Ember, fire, 40, 100, 25, 10
-Explosion, normal, 170, 100, 5, 
-Fire Blast, fire, 120, 85, 5, 33
-Fire Punch, fire, 75, 100, 15, 10
-Fire Spin, fire, 15, 70, 15, 
-Fissure, ground, 1, 30, 5, 
-Flamethrower, fire, 95, 100, 15, 10
-Flash, normal, 0, 70, 20, 
-Fly, flying, 70, 95, 15, 
-Focus Energy, normal, 0, 100, 30, 
-Fury Attack, normal, 15, 85, 20, 
-Fury Swipes, normal, 18, 80, 15, 
-Glare, normal, 0, 75, 30, 
-Growl, normal, 0, 100, 40, 
-Growth, normal, 0, 100, 40, 
-Guillotine, normal, 1, 30, 5, 
-Gust, normal, 40, 100, 35, 
-Harden, normal, 0, 100, 30, 
-Haze, ice, 0, 100, 30, 
-Headbutt, normal, 70, 100, 15, 33
-Hi Jump Kick, fighting, 85, 90, 20, 
-Horn Attack, normal, 65, 100, 25, 
-Horn Drill, normal, 1, 30, 5, 
-Hydro Pump, water, 120, 80, 5, 
-Hyper Beam, normal, 150, 90, 5, 
-Hyper Fang, normal, 80, 90, 15, 10
-Hypnosis, psychic, 0, 59.8, 20, 
-Ice Beam, ice, 95, 100, 10, 10
-Ice Punch, ice, 75, 100, 15, 10
-Jump Kick, fighting, 70, 95, 25, 
-Karate Chop, normal, 50, 100, 25, 
-Kinesis, psychic, 0, 80, 15, 
-Leech Life, bug, 20, 100, 15, 
-Leech Seed, grass, 0, 90, 10, 
-Leer, normal, 0, 100, 30, 
-Lick, ghost, 20, 100, 30, 33
-Light Screen, psychic, 0, 100, 30, 
-Lovely Kiss, normal, 0, 75, 10, 
-Low Kick, fighting, 50, 90, 20, 
-Meditate, psychic, 0, 100, 40, 
-Mega Drain, grass, 40, 100, 10, 
-Mega Kick, normal, 120, 74.6, 5, 
-Mega Punch, normal, 80, 85, 20, 
-Metronome, normal, 0, 100, 10, 
-Mimic, normal, 0, 100, 10, 
-Minimize, normal, 0, 100, 20, 
-Mirror Move, flying, 0, 100, 20, 
-Mist, ice, 0, 100, 30, 
-Night Shade, ghost, 0, 100, 15, 
-Pay Day, normal, 40, 100, 20, 
-Peck, flying, 35, 100, 35, 
-Petal Dance, grass, 70, 100, 20, 
-Pin Missile, bug, 14, 85, 20, 
-Poison Gas, poison, 0, 55, 40, 
-Poison Powder, poison, 0, 74.6, 35, 20
-Poison Sting, poison, 15, 100, 35, 
-Pound, normal, 40, 100, 35, 
-Psybeam, psychic, 65, 100, 20, 10
-Psychic, psychic, 90, 100, 10, 30
-Psywave, psychic, 1, 80, 15, 
-Quick Attack, normal, 40, 100, 30, 
-Rage, normal, 20, 100, 20, 
-Razor Leaf, grass, 55, 95, 25, 
-Razor Wind, normal, 80, 74.6, 10, 
-Recover, normal, 0, 100, 20, 
-Reflect, psychic, 0, 100, 20, 
-Rest, psychic, 0, 100, 10, 
-Roar, normal, 0, 100, 20, 
-Rock Slide, rock, 75, 90, 10, 
-Rock Throw, rock, 50, 65, 15, 
-Rolling Kick, fighting, 60, 85, 15, 33
-Sand-Attack, normal, 0, 100, 15, 
-Scratch, normal, 40, 100, 35, 
-Screech, normal, 0, 85, 40, 
-Seismic Toss, fighting, 1, 100, 20, 
-Self-Destruct, normal, 130, 100, 5, 
-Sharpen, normal, 0, 100, 30, 
-Sing, normal, 0, 55, 15, 
-Skull Bash, normal, 100, 100, 15, 
-Sky Attack, flying, 140, 90, 5, 
-Slam, normal, 80, 74.6, 20, 
-Slash, normal, 70, 100, 20, 
-Sleep Powder, grass, 0, 75, 15, 
-Sludge, poison, 65, 100, 20, 50
-Smog, poison, 20, 70, 20, 50
-Smokescreen, normal, 0, 100, 20, 
-Soft-Boiled, normal, 0, 100, 10, 
-Solar Beam, grass, 120, 100, 10, 
-Sonic Boom, normal, 1, 90, 20, 
-Spike Cannon, normal, 20, 100, 15, 
-Splash, normal, 0, 100, 40, 
-Spore, grass, 0, 100, 15, 
-Stomp, normal, 65, 100, 20, 33
-Strength, normal, 80, 100, 15, 
-String Shot, bug, 0, 95, 40, 
-Struggle, normal, 50, 100, 10, 
-Stun Spore, grass, 0, 75, 30, 
-Submission, fighting, 80, 80, 25, 
-Substitute, normal, 0, 100, 10, 
-Super Fang, normal, 1, 90, 10, 
-Supersonic, normal, 0, 55, 20, 
-Surf, water, 95, 100, 15, 
-Swift, normal, 60, 100, 20, 
-Swords Dance, normal, 0, 100, 30, 
-Tackle, normal, 35, 95, 35, 
-Tail Whip, normal, 0, 100, 30, 
-Take Down, normal, 90, 85, 20, 
-Teleport, psychic, 0, 100, 20, 
-Thrash, normal, 90, 100, 20, 
-Thunder, electric, 120, 70, 10, 
-Thunderbolt, electric, 95, 100, 15, 10
-Thunder Punch, electric, 75, 100, 15, 10
-Thunder Shock, electric, 40, 100, 30, 
-Thunder Wave, electric, 0, 100, 20, 10
-Toxic, poison, 0, 85, 10, 
-Transform, normal, 0, 100, 10, 
-Tri Attack, normal, 80, 100, 10, 
-Twineedle, bug, 25, 100, 20, 
-Vice Grip, normal, 55, 100, 30, 
-Vine Whip, grass, 35, 100, 10, 
-Waterfall, water, 80, 100, 15, 
-Water Gun, water, 40, 100, 25, 
-Whirlwind, normal, 0, 85, 20, 
-Wing Attack, flying, 35, 100, 35, 
-Withdraw, water, 0, 100, 40, 
-Wrap, normal, 15, 85, 20, 
+Absorb, grass, 20, 100, 20, | Oddish, Gloom, Tangela, Kabuto, Kabutops| | 
+Acid, poison, 40, 100, 30, 33| Ekans, Arbok, Oddish, Gloom, Vileplume, Bellsprout, Weepinbell, Victreebel, Tentacool, Tentacruel| | 
+Acid Armor, poison, 0, 100, 40, | Grimer, Muk, Vaporeon| | 
+Agility, psychic, 0, 100, 30, | Beedrill, Pidgey, Pidgeotto, Pidgeot, Spearow, Fearow, Pikachu, Growlithe, Ponyta, Rapidash, Farfetch'd, Doduo, Dodrio, Hitmonchan, Horsea, Seadra, Goldeen, Seaking, Scyther, Jolteon, Porygon, Aerodactyl, Articuno, Zapdos, Moltres, Dratini, Dragonair, Dragonite| | 
+Amnesia, psychic, 0, 100, 20, | Poliwag, Poliwhirl, Slowpoke, Slowbro, Snorlax, Mewtwo| | 
+Aurora Beam, ice, 65, 100, 20, 33| Seel, Dewgong, Shellder, Cloyster, Vaporeon| | 
+Barrage, normal, 15, 85, 20, | Exeggcute, Exeggutor| | 
+Barrier, psychic, 0, 100, 30, | Tentacool, Tentacruel, Mr. Mime, Mewtwo| | 
+Bide, normal, 0, 100, 10, | | Bulbasaur, Ivysaur, Venusaur, Charmander, Charmeleon, Charizard, Squirtle, Wartortle, Blastoise, Butterfree, Beedrill, Pidgey, Pidgeotto, Pidgeot, Rattata, Raticate, Spearow, Fearow, Ekans, Arbok, Pikachu, Raichu, Sandshrew, Sandslash, Nidoran♀, Nidorina, Nidoqueen, Nidoran♂, Nidorino, Nidoking, Clefairy, Clefable, Vulpix, Ninetales, Jigglypuff, Wigglytuff, Zubat, Golbat, Oddish, Gloom, Vileplume, Paras, Parasect, Venonat, Venomoth, Diglett, Dugtrio, Meowth, Persian, Psyduck, Golduck, Mankey, Primeape, Growlithe, Arcanine, Poliwag, Poliwhirl, Poliwrath, Abra, Kadabra, Alakazam, Machop, Machoke, Machamp, Bellsprout, Weepinbell, Victreebel, Tentacool, Tentacruel, Geodude, Graveler, Golem, Ponyta, Rapidash, Slowpoke, Slowbro, Magnemite, Magneton, Farfetch'd, Doduo, Dodrio, Seel, Dewgong, Grimer, Muk, Shellder, Cloyster, Gastly, Haunter, Gengar, Onix, Drowzee, Hypno, Krabby, Kingler, Voltorb, Electrode, Exeggcute, Exeggutor, Cubone, Marowak, Hitmonlee, Hitmonchan, Lickitung, Koffing, Weezing, Rhyhorn, Rhydon, Chansey, Tangela, Kangaskhan, Horsea, Seadra, Goldeen, Seaking, Staryu, Starmie, Mr. Mime, Scyther, Jynx, Electabuzz, Magmar, Pinsir, Tauros, Gyarados, Lapras, Eevee, Vaporeon, Jolteon, Flareon, Porygon, Omanyte, Omastar, Kabuto, Kabutops, Aerodactyl, Snorlax, Articuno, Zapdos, Moltres, Dratini, Dragonair, Dragonite, Mewtwo, Mew| 
+Bind, normal, 15, 74.6, 20, | Onix, Tangela, Pinsir| | 
+Bite, normal, 60, 100, 25, 10| Squirtle, Wartortle, Blastoise, Ekans, Arbok, Nidoran♀, Nidorina, Zubat, Golbat, Meowth, Persian, Growlithe, Kangaskhan, Gyarados, Eevee, Vaporeon, Flareon, Aerodactyl| | 
+Blizzard, ice, 120, 90, 5, 10| Jynx, Articuno| Squirtle, Wartortle, Blastoise, Rattata, Raticate, Nidoran♀, Nidorina, Nidoqueen, Nidoran♂, Nidorino, Nidoking, Clefairy, Clefable, Jigglypuff, Wigglytuff, Psyduck, Golduck, Poliwag, Poliwhirl, Poliwrath, Tentacool, Tentacruel, Slowpoke, Slowbro, Seel, Dewgong, Shellder, Cloyster, Krabby, Kingler, Cubone, Marowak, Lickitung, Rhydon, Chansey, Kangaskhan, Horsea, Seadra, Goldeen, Seaking, Staryu, Starmie, Jynx, Tauros, Gyarados, Lapras, Vaporeon, Porygon, Omanyte, Omastar, Kabuto, Kabutops, Snorlax, Articuno, Dratini, Dragonair, Dragonite, Mewtwo, Mew| 
+Body Slam, normal, 85, 100, 15, 33| Nidoqueen, Jigglypuff, Poliwag, Poliwhirl, Poliwrath, Jynx, Lapras, Snorlax| Bulbasaur, Ivysaur, Venusaur, Charmander, Charmeleon, Charizard, Squirtle, Wartortle, Blastoise, Rattata, Raticate, Ekans, Arbok, Pikachu, Raichu, Sandshrew, Sandslash, Nidoran♀, Nidorina, Nidoqueen, Nidoran♂, Nidorino, Nidoking, Clefairy, Clefable, Vulpix, Ninetales, Jigglypuff, Wigglytuff, Vileplume, Paras, Parasect, Diglett, Dugtrio, Meowth, Persian, Psyduck, Golduck, Mankey, Primeape, Growlithe, Arcanine, Poliwag, Poliwhirl, Poliwrath, Abra, Kadabra, Alakazam, Machop, Machoke, Machamp, Victreebel, Geodude, Graveler, Golem, Ponyta, Rapidash, Slowpoke, Slowbro, Farfetch'd, Doduo, Dodrio, Seel, Dewgong, Grimer, Muk, Gengar, Onix, Drowzee, Hypno, Krabby, Kingler, Cubone, Marowak, Hitmonlee, Hitmonchan, Lickitung, Rhyhorn, Rhydon, Chansey, Tangela, Kangaskhan, Mr. Mime, Jynx, Electabuzz, Magmar, Pinsir, Tauros, Gyarados, Lapras, Eevee, Vaporeon, Jolteon, Flareon, Omanyte, Omastar, Kabuto, Kabutops, Snorlax, Dratini, Dragonair, Dragonite, Mewtwo, Mew| 
+Bone Club, ground, 65, 85, 20, 10| Cubone, Marowak| | 
+Bonemerang, ground, 50, 90, 10, | Cubone, Marowak| | 
+Bubble, water, 20, 100, 30, 30| Squirtle, Wartortle, Blastoise, Poliwag, Poliwhirl, Krabby, Kingler, Horsea, Seadra| | 
+Bubble Beam, water, 65, 100, 20, 33| | Squirtle, Wartortle, Blastoise, Rattata, Raticate, Nidorina, Nidoqueen, Nidorino, Nidoking, Clefairy, Clefable, Jigglypuff, Wigglytuff, Meowth, Persian, Psyduck, Golduck, Poliwag, Poliwhirl, Poliwrath, Tentacool, Tentacruel, Slowpoke, Slowbro, Seel, Dewgong, Shellder, Cloyster, Krabby, Kingler, Cubone, Marowak, Lickitung, Rhydon, Chansey, Kangaskhan, Horsea, Seadra, Goldeen, Seaking, Staryu, Starmie, Jynx, Gyarados, Lapras, Vaporeon, Omanyte, Omastar, Kabuto, Kabutops, Snorlax, Articuno, Dratini, Dragonair, Dragonite, Mewtwo, Mew| 
+Clamp, water, 35, 75, 10, | Shellder, Cloyster| | 
+Comet Punch, normal, 18, 85, 15, | Hitmonchan, Kangaskhan| | 
+Confuse Ray, ghost, 0, 100, 10, | Vulpix, Zubat, Golbat, Gastly, Haunter, Gengar, Magmar, Lapras| | 
+Confusion, psychic, 50, 100, 25, 10| Butterfree, Venonat, Venomoth, Psyduck, Golduck, Kadabra, Alakazam, Slowpoke, Slowbro, Drowzee, Hypno, Mr. Mime, Mewtwo| | 
+Constrict, normal, 10, 100, 35, 10| Tentacool, Tentacruel, Tangela| | 
+Conversion, normal, 0, 100, 30, | Porygon| | 
+Counter, fighting, 1, 100, 20, | Hitmonchan| Charmander, Charmeleon, Charizard, Squirtle, Wartortle, Blastoise, Nidoqueen, Nidoking, Clefairy, Clefable, Jigglypuff, Wigglytuff, Psyduck, Golduck, Mankey, Primeape, Poliwhirl, Poliwrath, Abra, Kadabra, Alakazam, Machop, Machoke, Machamp, Geodude, Graveler, Golem, Slowbro, Gengar, Drowzee, Hypno, Cubone, Marowak, Hitmonlee, Hitmonchan, Lickitung, Rhydon, Chansey, Kangaskhan, Mr. Mime, Jynx, Electabuzz, Magmar, Snorlax, Mewtwo, Mew| 
+Crabhammer, water, 90, 85, 10, | Krabby, Kingler| | 
+Cut, normal, 50, 95, 30, | | Bulbasaur, Ivysaur, Venusaur, Charmander, Charmeleon, Charizard, Beedrill, Sandshrew, Sandslash, Oddish, Gloom, Vileplume, Paras, Parasect, Diglett, Dugtrio, Bellsprout, Weepinbell, Victreebel, Tentacool, Tentacruel, Farfetch'd, Krabby, Kingler, Lickitung, Tangela, Scyther, Pinsir, Kabutops, Mew| 
+Defense Curl, normal, 0, 100, 40, | Clefairy, Jigglypuff, Wigglytuff, Geodude, Graveler, Golem, Lickitung, Chansey| | 
+Dig, ground, 100, 100, 10, | Diglett, Dugtrio| Charmander, Charmeleon, Charizard, Squirtle, Wartortle, Blastoise, Rattata, Raticate, Ekans, Arbok, Sandshrew, Sandslash, Vulpix, Ninetales, Paras, Parasect, Diglett, Dugtrio, Psyduck, Golduck, Mankey, Primeape, Growlithe, Arcanine, Kadabra, Alakazam, Machop, Machoke, Machamp, Geodude, Graveler, Golem, Slowpoke, Slowbro, Onix, Cubone, Marowak, Rhyhorn, Rhydon, Mew| 
+Disable, normal, 0, 55, 20, | Jigglypuff, Wigglytuff, Venonat, Venomoth, Psyduck, Golduck, Kadabra, Alakazam, Slowpoke, Slowbro, Grimer, Muk, Drowzee, Hypno, Lickitung, Mewtwo| | 
+Dizzy Punch, normal, 70, 100, 10, 20| Kangaskhan| | 
+Double-Edge, normal, 100, 100, 15, | Jigglypuff, Chansey, Snorlax| Bulbasaur, Ivysaur, Venusaur, Charmander, Charmeleon, Charizard, Squirtle, Wartortle, Blastoise, Butterfree, Beedrill, Pidgey, Pidgeotto, Pidgeot, Rattata, Raticate, Spearow, Fearow, Ekans, Arbok, Pikachu, Raichu, Sandshrew, Sandslash, Nidoran♀, Nidorina, Nidoqueen, Nidoran♂, Nidorino, Nidoking, Clefairy, Clefable, Vulpix, Ninetales, Jigglypuff, Wigglytuff, Zubat, Golbat, Oddish, Gloom, Vileplume, Paras, Parasect, Venonat, Venomoth, Diglett, Dugtrio, Meowth, Persian, Psyduck, Golduck, Mankey, Primeape, Growlithe, Arcanine, Poliwag, Poliwhirl, Poliwrath, Abra, Kadabra, Alakazam, Machop, Machoke, Machamp, Bellsprout, Weepinbell, Victreebel, Tentacool, Tentacruel, Geodude, Graveler, Golem, Ponyta, Rapidash, Slowpoke, Slowbro, Magnemite, Magneton, Farfetch'd, Doduo, Dodrio, Seel, Dewgong, Shellder, Cloyster, Gengar, Onix, Drowzee, Hypno, Krabby, Kingler, Exeggcute, Exeggutor, Cubone, Marowak, Hitmonlee, Hitmonchan, Lickitung, Rhyhorn, Rhydon, Chansey, Tangela, Kangaskhan, Horsea, Seadra, Goldeen, Seaking, Staryu, Starmie, Mr. Mime, Scyther, Jynx, Electabuzz, Magmar, Pinsir, Tauros, Gyarados, Lapras, Eevee, Vaporeon, Jolteon, Flareon, Porygon, Omanyte, Omastar, Kabuto, Kabutops, Aerodactyl, Snorlax, Articuno, Zapdos, Moltres, Dratini, Dragonair, Dragonite, Mewtwo, Mew| 
+Double Kick, fighting, 30, 100, 30, | Nidoran♀, Nidorina, Nidoqueen, Nidoran♂, Nidorino, Nidoking, Hitmonlee, Jolteon| | 
+Double Slap, normal, 15, 85, 10, | Clefairy, Clefable, Jigglypuff, Wigglytuff, Poliwag, Poliwhirl, Poliwrath, Chansey, Mr. Mime, Jynx| | 
+Double Team, normal, 0, 100, 15, | Pikachu, Scyther| Bulbasaur, Ivysaur, Venusaur, Charmander, Charmeleon, Charizard, Squirtle, Wartortle, Blastoise, Butterfree, Beedrill, Pidgey, Pidgeotto, Pidgeot, Rattata, Raticate, Spearow, Fearow, Ekans, Arbok, Pikachu, Raichu, Sandshrew, Sandslash, Nidoran♀, Nidorina, Nidoqueen, Nidoran♂, Nidorino, Nidoking, Clefairy, Clefable, Vulpix, Ninetales, Jigglypuff, Wigglytuff, Zubat, Golbat, Oddish, Gloom, Vileplume, Paras, Parasect, Venonat, Venomoth, Diglett, Dugtrio, Meowth, Persian, Psyduck, Golduck, Mankey, Primeape, Growlithe, Arcanine, Poliwag, Poliwhirl, Poliwrath, Abra, Kadabra, Alakazam, Machop, Machoke, Machamp, Bellsprout, Weepinbell, Victreebel, Tentacool, Tentacruel, Geodude, Graveler, Golem, Ponyta, Rapidash, Slowpoke, Slowbro, Magnemite, Magneton, Farfetch'd, Doduo, Dodrio, Seel, Dewgong, Grimer, Muk, Shellder, Cloyster, Gastly, Haunter, Gengar, Onix, Drowzee, Hypno, Krabby, Kingler, Voltorb, Electrode, Exeggcute, Exeggutor, Cubone, Marowak, Hitmonlee, Hitmonchan, Lickitung, Koffing, Weezing, Rhyhorn, Rhydon, Chansey, Tangela, Kangaskhan, Horsea, Seadra, Goldeen, Seaking, Staryu, Starmie, Mr. Mime, Scyther, Jynx, Electabuzz, Magmar, Pinsir, Tauros, Gyarados, Lapras, Eevee, Vaporeon, Jolteon, Flareon, Porygon, Omanyte, Omastar, Kabuto, Kabutops, Aerodactyl, Snorlax, Articuno, Zapdos, Moltres, Dratini, Dragonair, Dragonite, Mewtwo, Mew| 
+Dragon Rage, dragon, 1, 100, 10, | Gyarados, Dratini, Dragonair, Dragonite| Charmander, Charmeleon, Charizard, Growlithe, Arcanine, Gyarados, Lapras, Aerodactyl, Dratini, Dragonair, Dragonite, Mew| 
+Dream Eater, psychic, 100, 100, 15, | Gastly, Haunter, Gengar| Gastly, Haunter, Gengar, Drowzee, Hypno, Mew| 
+Drill Peck, flying, 80, 100, 20, | Spearow, Fearow, Doduo, Dodrio, Zapdos| | 
+Earthquake, ground, 100, 100, 10, | Diglett, Dugtrio, Geodude, Graveler, Golem| Charizard, Blastoise, Ekans, Arbok, Sandshrew, Sandslash, Nidoqueen, Nidoking, Diglett, Dugtrio, Poliwhirl, Poliwrath, Machop, Machoke, Machamp, Geodude, Graveler, Golem, Slowpoke, Slowbro, Onix, Cubone, Marowak, Lickitung, Rhyhorn, Rhydon, Kangaskhan, Tauros, Snorlax, Mew| 
+Egg Bomb, normal, 100, 75, 10, | | Exeggcute, Exeggutor, Chansey, Mew| 
+Ember, fire, 40, 100, 25, 10| Charmander, Charmeleon, Charizard, Vulpix, Ninetales, Growlithe, Arcanine, Ponyta, Rapidash, Magmar, Flareon| | 
+Explosion, normal, 170, 100, 5, | Geodude, Graveler, Golem, Voltorb, Electrode, Koffing, Weezing| Geodude, Graveler, Golem, Grimer, Muk, Shellder, Cloyster, Gastly, Haunter, Gengar, Onix, Voltorb, Electrode, Exeggcute, Exeggutor, Koffing, Weezing, Mew| 
+Fire Blast, fire, 120, 85, 5, 33| | Charmander, Charmeleon, Charizard, Nidoqueen, Nidoking, Clefairy, Clefable, Vulpix, Ninetales, Jigglypuff, Wigglytuff, Growlithe, Arcanine, Machop, Machoke, Machamp, Geodude, Graveler, Golem, Ponyta, Rapidash, Slowpoke, Slowbro, Grimer, Muk, Cubone, Marowak, Lickitung, Koffing, Weezing, Rhyhorn, Rhydon, Chansey, Kangaskhan, Magmar, Tauros, Gyarados, Flareon, Aerodactyl, Snorlax, Moltres, Dratini, Dragonair, Dragonite, Mewtwo, Mew| 
+Fire Punch, fire, 75, 100, 15, 10| Hitmonchan, Magmar| | 
+Fire Spin, fire, 15, 70, 15, | Charmander, Charmeleon, Charizard, Vulpix, Ponyta, Rapidash, Flareon, Moltres| | 
+Fissure, ground, 1, 30, 5, | | Charizard, Blastoise, Ekans, Arbok, Sandshrew, Sandslash, Nidoqueen, Nidoking, Diglett, Dugtrio, Poliwhirl, Poliwrath, Machop, Machoke, Machamp, Geodude, Graveler, Golem, Slowpoke, Slowbro, Onix, Cubone, Marowak, Lickitung, Rhyhorn, Rhydon, Kangaskhan, Tauros, Snorlax, Mew| 
+Flamethrower, fire, 95, 100, 15, 10| Charmander, Charmeleon, Charizard, Vulpix, Growlithe, Magmar, Flareon| | 
+Flash, normal, 0, 70, 20, | | Butterfree, Pikachu, Raichu, Clefairy, Clefable, Jigglypuff, Wigglytuff, Venonat, Venomoth, Abra, Kadabra, Alakazam, Slowpoke, Slowbro, Magnemite, Magneton, Drowzee, Hypno, Voltorb, Electrode, Chansey, Staryu, Starmie, Mr. Mime, Electabuzz, Jolteon, Porygon, Zapdos, Mewtwo, Mew| 
+Fly, flying, 70, 95, 15, | | Charizard, Pidgey, Pidgeotto, Pidgeot, Spearow, Fearow, Farfetch'd, Doduo, Dodrio, Aerodactyl, Articuno, Zapdos, Moltres, Mew| 
+Focus Energy, normal, 0, 100, 30, | Beedrill, Rattata, Raticate, Nidoran♂, Nidorino, Mankey, Primeape, Machop, Machoke, Machamp, Cubone, Marowak, Hitmonlee, Scyther, Pinsir, Eevee| | 
+Fury Attack, normal, 15, 85, 20, | Beedrill, Spearow, Fearow, Nidoran♂, Nidorino, Farfetch'd, Doduo, Dodrio, Rhyhorn, Rhydon, Goldeen, Seaking| | 
+Fury Swipes, normal, 18, 80, 15, | Sandshrew, Sandslash, Nidoran♀, Nidorina, Meowth, Persian, Psyduck, Golduck, Mankey, Primeape| | 
+Glare, normal, 0, 75, 30, | Ekans, Arbok| | 
+Growl, normal, 0, 100, 40, | Bulbasaur, Ivysaur, Venusaur, Charmander, Charmeleon, Charizard, Spearow, Fearow, Pikachu, Raichu, Nidoran♀, Nidorina, Clefairy, Diglett, Dugtrio, Meowth, Persian, Ponyta, Rapidash, Slowpoke, Slowbro, Doduo, Dodrio, Seel, Dewgong, Cubone, Marowak, Chansey, Lapras, Eevee| | 
+Growth, normal, 0, 100, 40, | Bulbasaur, Ivysaur, Venusaur, Paras, Parasect, Bellsprout, Weepinbell, Tangela| | 
+Guillotine, normal, 1, 30, 5, | Krabby, Kingler, Pinsir| | 
+Gust, normal, 40, 100, 35, | Butterfree, Pidgey, Pidgeotto, Pidgeot| | 
+Harden, normal, 0, 100, 30, | Metapod, Kakuna, Geodude, Graveler, Golem, Grimer, Muk, Onix, Krabby, Kingler, Staryu, Starmie, Pinsir, Kabuto, Kabutops, Snorlax| | 
+Haze, ice, 0, 100, 30, | Zubat, Golbat, Koffing, Weezing, Vaporeon| | 
+Headbutt, normal, 70, 100, 15, 33| Slowpoke, Slowbro, Seel, Dewgong, Drowzee, Hypno, Cubone, Marowak, Snorlax| | 
+Hi Jump Kick, fighting, 85, 90, 20, | Hitmonlee| | 
+Horn Attack, normal, 65, 100, 25, | Nidoran♂, Nidorino, Nidoking, Rhyhorn, Rhydon, Goldeen, Seaking, Omanyte, Omastar| | 
+Horn Drill, normal, 1, 30, 5, | Nidoran♂, Nidorino, Rhyhorn, Rhydon, Goldeen, Seaking| Nidorina, Nidoqueen, Nidorino, Nidoking, Ponyta, Rapidash, Seel, Dewgong, Rhyhorn, Rhydon, Goldeen, Seaking, Tauros, Lapras, Dratini, Dragonair, Dragonite, Mew| 
+Hydro Pump, water, 120, 80, 5, | Squirtle, Wartortle, Blastoise, Psyduck, Golduck, Poliwag, Poliwhirl, Tentacool, Tentacruel, Horsea, Seadra, Staryu, Gyarados, Lapras, Vaporeon, Omanyte, Omastar, Kabuto, Kabutops| | 
+Hyper Beam, normal, 150, 90, 5, | Gyarados, Aerodactyl, Snorlax, Dratini, Dragonair, Dragonite| Venusaur, Charizard, Blastoise, Butterfree, Beedrill, Pidgeot, Raticate, Fearow, Arbok, Raichu, Sandslash, Nidoqueen, Nidoking, Clefable, Ninetales, Wigglytuff, Golbat, Vileplume, Parasect, Venomoth, Dugtrio, Persian, Golduck, Primeape, Arcanine, Poliwrath, Alakazam, Machamp, Victreebel, Tentacruel, Golem, Rapidash, Slowbro, Magneton, Dodrio, Dewgong, Muk, Cloyster, Gengar, Hypno, Kingler, Electrode, Exeggutor, Marowak, Lickitung, Weezing, Rhydon, Chansey, Tangela, Kangaskhan, Seadra, Seaking, Starmie, Mr. Mime, Scyther, Jynx, Electabuzz, Magmar, Pinsir, Tauros, Gyarados, Lapras, Vaporeon, Jolteon, Flareon, Porygon, Omastar, Kabutops, Aerodactyl, Snorlax, Articuno, Zapdos, Moltres, Dragonite, Mewtwo, Mew| 
+Hyper Fang, normal, 80, 90, 15, 10| Rattata, Raticate| | 
+Hypnosis, psychic, 0, 59.8, 20, | Poliwag, Poliwhirl, Poliwrath, Gastly, Haunter, Gengar, Drowzee, Hypno, Exeggcute, Exeggutor| | 
+Ice Beam, ice, 95, 100, 10, 10| Seel, Dewgong, Shellder, Lapras, Articuno| Squirtle, Wartortle, Blastoise, Raticate, Nidorina, Nidoqueen, Nidorino, Nidoking, Clefairy, Clefable, Jigglypuff, Wigglytuff, Psyduck, Golduck, Poliwag, Poliwhirl, Poliwrath, Tentacool, Tentacruel, Slowpoke, Slowbro, Seel, Dewgong, Shellder, Cloyster, Krabby, Kingler, Cubone, Marowak, Lickitung, Rhydon, Chansey, Kangaskhan, Horsea, Seadra, Goldeen, Seaking, Staryu, Starmie, Jynx, Tauros, Gyarados, Lapras, Vaporeon, Porygon, Omanyte, Omastar, Kabuto, Kabutops, Snorlax, Articuno, Dratini, Dragonair, Dragonite, Mewtwo, Mew| 
+Ice Punch, ice, 75, 100, 15, 10| Hitmonchan, Jynx| | 
+Jump Kick, fighting, 70, 95, 25, | Hitmonlee| | 
+Karate Chop, normal, 50, 100, 25, | Mankey, Primeape, Machop, Machoke, Machamp| | 
+Kinesis, psychic, 0, 80, 15, | Kadabra, Alakazam| | 
+Leech Life, bug, 20, 100, 15, | Zubat, Golbat, Paras, Parasect, Venonat, Venomoth| | 
+Leech Seed, grass, 0, 90, 10, | Bulbasaur, Ivysaur, Venusaur, Exeggcute| | 
+Leer, normal, 0, 100, 30, | Charmander, Charmeleon, Charizard, Spearow, Fearow, Ekans, Arbok, Nidoran♂, Nidorino, Mankey, Primeape, Growlithe, Arcanine, Machop, Machoke, Machamp, Farfetch'd, Shellder, Krabby, Kingler, Cubone, Marowak, Rhyhorn, Rhydon, Kangaskhan, Horsea, Seadra, Scyther, Electabuzz, Magmar, Tauros, Gyarados, Flareon, Omanyte, Omastar, Kabuto, Kabutops, Moltres, Dratini, Dragonair, Dragonite| | 
+Lick, ghost, 20, 100, 30, 33| Gastly, Haunter, Gengar, Jynx| | 
+Light Screen, psychic, 0, 100, 30, | Pikachu, Clefairy, Voltorb, Electrode, Chansey, Staryu, Mr. Mime, Electabuzz, Zapdos| | 
+Lovely Kiss, normal, 0, 75, 10, | Jynx| | 
+Low Kick, fighting, 50, 90, 20, | Mankey, Primeape, Machop, Machoke, Machamp| | 
+Meditate, psychic, 0, 100, 40, | Drowzee, Hypno, Hitmonlee, Mr. Mime| | 
+Mega Drain, grass, 40, 100, 10, | | Bulbasaur, Ivysaur, Venusaur, Butterfree, Beedrill, Ekans, Arbok, Zubat, Golbat, Oddish, Gloom, Vileplume, Paras, Parasect, Venonat, Venomoth, Bellsprout, Weepinbell, Victreebel, Tentacool, Tentacruel, Grimer, Muk, Gastly, Haunter, Gengar, Exeggutor, Tangela, Mew| 
+Mega Kick, normal, 120, 74.6, 5, | Hitmonlee| Charmander, Charmeleon, Charizard, Squirtle, Wartortle, Blastoise, Pikachu, Raichu, Nidoqueen, Nidoking, Clefairy, Clefable, Jigglypuff, Wigglytuff, Psyduck, Golduck, Mankey, Primeape, Poliwhirl, Poliwrath, Machop, Machoke, Machamp, Golem, Slowbro, Gengar, Drowzee, Hypno, Cubone, Marowak, Hitmonlee, Hitmonchan, Lickitung, Rhydon, Chansey, Kangaskhan, Mr. Mime, Jynx, Electabuzz, Magmar, Kabutops, Snorlax, Mewtwo, Mew| 
+Mega Punch, normal, 80, 85, 20, | Hitmonchan, Kangaskhan, Mew| Charmander, Charmeleon, Charizard, Squirtle, Wartortle, Blastoise, Pikachu, Raichu, Nidoqueen, Nidoking, Clefairy, Clefable, Jigglypuff, Wigglytuff, Psyduck, Golduck, Mankey, Primeape, Poliwhirl, Poliwrath, Abra, Kadabra, Alakazam, Machop, Machoke, Machamp, Geodude, Graveler, Golem, Slowbro, Gengar, Drowzee, Hypno, Cubone, Marowak, Hitmonlee, Hitmonchan, Lickitung, Rhydon, Chansey, Kangaskhan, Mr. Mime, Jynx, Electabuzz, Magmar, Snorlax, Mewtwo, Mew| 
+Metronome, normal, 0, 100, 10, | Clefairy, Clefable, Mew| Clefairy, Clefable, Mankey, Primeape, Poliwhirl, Poliwrath, Abra, Kadabra, Alakazam, Machop, Machoke, Machamp, Geodude, Graveler, Golem, Gengar, Drowzee, Hypno, Hitmonlee, Hitmonchan, Chansey, Mr. Mime, Jynx, Electabuzz, Magmar, Snorlax, Mewtwo, Mew| 
+Mimic, normal, 0, 100, 10, | | Bulbasaur, Ivysaur, Venusaur, Charmander, Charmeleon, Charizard, Squirtle, Wartortle, Blastoise, Butterfree, Beedrill, Pidgey, Pidgeotto, Pidgeot, Rattata, Raticate, Spearow, Fearow, Ekans, Arbok, Pikachu, Raichu, Sandshrew, Sandslash, Nidoran♀, Nidorina, Nidoqueen, Nidoran♂, Nidorino, Nidoking, Clefairy, Clefable, Vulpix, Ninetales, Jigglypuff, Wigglytuff, Zubat, Golbat, Oddish, Gloom, Vileplume, Paras, Parasect, Venonat, Venomoth, Diglett, Dugtrio, Meowth, Persian, Psyduck, Golduck, Mankey, Primeape, Growlithe, Arcanine, Poliwag, Poliwhirl, Poliwrath, Abra, Kadabra, Alakazam, Machop, Machoke, Machamp, Bellsprout, Weepinbell, Victreebel, Tentacool, Tentacruel, Geodude, Graveler, Golem, Ponyta, Rapidash, Slowpoke, Slowbro, Magnemite, Magneton, Farfetch'd, Doduo, Dodrio, Seel, Dewgong, Grimer, Muk, Shellder, Cloyster, Gastly, Haunter, Gengar, Onix, Drowzee, Hypno, Krabby, Kingler, Voltorb, Electrode, Exeggcute, Exeggutor, Cubone, Marowak, Hitmonlee, Hitmonchan, Lickitung, Koffing, Weezing, Rhyhorn, Rhydon, Chansey, Tangela, Kangaskhan, Horsea, Seadra, Goldeen, Seaking, Staryu, Starmie, Mr. Mime, Scyther, Jynx, Electabuzz, Magmar, Pinsir, Tauros, Gyarados, Lapras, Eevee, Vaporeon, Jolteon, Flareon, Porygon, Omanyte, Omastar, Kabuto, Kabutops, Aerodactyl, Snorlax, Articuno, Zapdos, Moltres, Dratini, Dragonair, Dragonite, Mewtwo, Mew| 
+Minimize, normal, 0, 100, 20, | Clefairy, Clefable, Grimer, Muk, Chansey, Staryu| | 
+Mirror Move, flying, 0, 100, 20, | Pidgey, Pidgeotto, Pidgeot, Spearow, Fearow| | 
+Mist, ice, 0, 100, 30, | Lapras, Vaporeon, Articuno, Mewtwo| | 
+Night Shade, ghost, 0, 100, 15, | Gastly, Haunter, Gengar| | 
+Pay Day, normal, 40, 100, 20, | Meowth, Persian| Pikachu, Raichu, Nidoqueen, Nidoking, Meowth, Persian, Psyduck, Golduck, Mankey, Primeape, Slowpoke, Slowbro, Seel, Dewgong, Rhydon, Snorlax, Mewtwo, Mew| 
+Peck, flying, 35, 100, 35, | Spearow, Fearow, Farfetch'd, Doduo, Dodrio, Goldeen, Seaking, Articuno, Moltres| | 
+Petal Dance, grass, 70, 100, 20, | Oddish, Gloom, Vileplume| | 
+Pin Missile, bug, 14, 85, 20, | Beedrill, Jolteon| | 
+Poison Gas, poison, 0, 55, 40, | Grimer, Muk, Drowzee, Hypno| | 
+Poison Powder, poison, 0, 74.6, 35, 20| Bulbasaur, Ivysaur, Venusaur, Butterfree, Oddish, Gloom, Vileplume, Venonat, Venomoth, Bellsprout, Weepinbell, Victreebel, Exeggcute, Tangela| | 
+Poison Sting, poison, 15, 100, 35, | Weedle, Ekans, Arbok, Sandshrew, Sandslash, Nidoran♀, Nidorina, Nidoqueen, Nidoran♂, Nidorino, Nidoking, Tentacool, Tentacruel| | 
+Pound, normal, 40, 100, 35, | Clefairy, Jigglypuff, Grimer, Muk, Drowzee, Hypno, Chansey, Jynx, Mew| | 
+Psybeam, psychic, 65, 100, 20, 10| Butterfree, Venonat, Venomoth, Kadabra, Alakazam, Porygon| | 
+Psychic, psychic, 90, 100, 10, 30| Venonat, Venomoth, Kadabra, Alakazam, Slowpoke, Slowbro, Drowzee, Hypno, Mewtwo, Mew| Butterfree, Clefairy, Clefable, Jigglypuff, Wigglytuff, Venonat, Venomoth, Poliwag, Poliwhirl, Poliwrath, Abra, Kadabra, Alakazam, Slowpoke, Slowbro, Gastly, Haunter, Gengar, Drowzee, Hypno, Exeggcute, Exeggutor, Chansey, Staryu, Starmie, Mr. Mime, Jynx, Electabuzz, Magmar, Lapras, Porygon, Snorlax, Mewtwo, Mew| 
+Psywave, psychic, 1, 80, 15, | | Butterfree, Clefairy, Clefable, Jigglypuff, Wigglytuff, Venonat, Venomoth, Poliwag, Poliwhirl, Poliwrath, Abra, Kadabra, Alakazam, Slowpoke, Slowbro, Gastly, Haunter, Gengar, Drowzee, Hypno, Exeggcute, Exeggutor, Chansey, Staryu, Starmie, Mr. Mime, Jynx, Electabuzz, Magmar, Lapras, Porygon, Snorlax, Mewtwo, Mew| 
+Quick Attack, normal, 40, 100, 30, | Pidgey, Pidgeotto, Pidgeot, Rattata, Raticate, Pikachu, Vulpix, Ninetales, Scyther, Electabuzz, Eevee, Vaporeon, Jolteon, Flareon| | 
+Rage, normal, 20, 100, 20, | Charmander, Charmeleon, Charizard, Beedrill, Primeape, Doduo, Dodrio, Onix, Cubone, Marowak, Kangaskhan, Tauros, Flareon| Bulbasaur, Ivysaur, Venusaur, Charmander, Charmeleon, Charizard, Squirtle, Wartortle, Blastoise, Butterfree, Beedrill, Pidgey, Pidgeotto, Pidgeot, Rattata, Raticate, Spearow, Fearow, Ekans, Arbok, Pikachu, Raichu, Sandshrew, Sandslash, Nidoran♀, Nidorina, Nidoqueen, Nidoran♂, Nidorino, Nidoking, Clefairy, Clefable, Vulpix, Ninetales, Jigglypuff, Wigglytuff, Zubat, Golbat, Oddish, Gloom, Vileplume, Paras, Parasect, Venonat, Venomoth, Diglett, Dugtrio, Meowth, Persian, Psyduck, Golduck, Mankey, Primeape, Growlithe, Arcanine, Poliwag, Poliwhirl, Poliwrath, Abra, Kadabra, Alakazam, Machop, Machoke, Machamp, Bellsprout, Weepinbell, Victreebel, Tentacool, Tentacruel, Geodude, Graveler, Golem, Ponyta, Rapidash, Slowpoke, Slowbro, Magnemite, Magneton, Farfetch'd, Doduo, Dodrio, Seel, Dewgong, Grimer, Muk, Shellder, Cloyster, Gastly, Haunter, Gengar, Onix, Drowzee, Hypno, Krabby, Kingler, Exeggcute, Exeggutor, Cubone, Marowak, Hitmonlee, Hitmonchan, Lickitung, Koffing, Weezing, Rhyhorn, Rhydon, Chansey, Tangela, Kangaskhan, Horsea, Seadra, Goldeen, Seaking, Staryu, Starmie, Mr. Mime, Scyther, Jynx, Electabuzz, Magmar, Pinsir, Tauros, Gyarados, Lapras, Eevee, Vaporeon, Jolteon, Flareon, Porygon, Omanyte, Omastar, Kabuto, Kabutops, Aerodactyl, Snorlax, Articuno, Zapdos, Moltres, Dratini, Dragonair, Dragonite, Mewtwo, Mew| 
+Razor Leaf, grass, 55, 95, 25, | Bulbasaur, Ivysaur, Venusaur, Bellsprout, Weepinbell, Victreebel| | 
+Razor Wind, normal, 80, 74.6, 10, | | Butterfree, Pidgey, Pidgeotto, Pidgeot, Spearow, Fearow, Zubat, Golbat, Venomoth, Farfetch'd, Kabutops, Aerodactyl, Articuno, Zapdos, Moltres, Dragonite, Mew| 
+Recover, normal, 0, 100, 20, | Kadabra, Alakazam, Staryu, Porygon, Mewtwo| | 
+Reflect, psychic, 0, 100, 20, | Kadabra, Alakazam, Exeggcute| Bulbasaur, Ivysaur, Venusaur, Charmander, Charmeleon, Charizard, Squirtle, Wartortle, Blastoise, Butterfree, Beedrill, Pidgey, Pidgeotto, Pidgeot, Pikachu, Raichu, Nidoran♀, Nidorina, Nidoqueen, Nidoran♂, Nidorino, Nidoking, Clefairy, Clefable, Vulpix, Ninetales, Jigglypuff, Wigglytuff, Oddish, Gloom, Vileplume, Paras, Parasect, Venonat, Venomoth, Growlithe, Arcanine, Abra, Kadabra, Alakazam, Bellsprout, Weepinbell, Victreebel, Tentacool, Tentacruel, Ponyta, Rapidash, Slowpoke, Slowbro, Magnemite, Magneton, Farfetch'd, Doduo, Dodrio, Shellder, Cloyster, Drowzee, Hypno, Voltorb, Electrode, Exeggcute, Exeggutor, Chansey, Staryu, Starmie, Mr. Mime, Jynx, Electabuzz, Gyarados, Lapras, Eevee, Vaporeon, Jolteon, Flareon, Porygon, Omanyte, Omastar, Kabuto, Kabutops, Aerodactyl, Snorlax, Articuno, Zapdos, Moltres, Dratini, Dragonair, Dragonite, Mewtwo, Mew| 
+Rest, psychic, 0, 100, 10, | Jigglypuff, Seel, Dewgong, Snorlax| Bulbasaur, Ivysaur, Venusaur, Charmander, Charmeleon, Charizard, Squirtle, Wartortle, Blastoise, Butterfree, Beedrill, Pidgey, Pidgeotto, Pidgeot, Rattata, Raticate, Spearow, Fearow, Ekans, Arbok, Pikachu, Raichu, Sandshrew, Sandslash, Nidoran♀, Nidorina, Nidoqueen, Nidoran♂, Nidorino, Nidoking, Clefairy, Clefable, Vulpix, Ninetales, Jigglypuff, Wigglytuff, Zubat, Golbat, Oddish, Gloom, Vileplume, Paras, Parasect, Venonat, Venomoth, Diglett, Dugtrio, Meowth, Persian, Psyduck, Golduck, Mankey, Primeape, Growlithe, Arcanine, Poliwag, Poliwhirl, Poliwrath, Abra, Kadabra, Alakazam, Machop, Machoke, Machamp, Bellsprout, Weepinbell, Victreebel, Tentacool, Tentacruel, Geodude, Graveler, Golem, Ponyta, Rapidash, Slowpoke, Slowbro, Magnemite, Magneton, Farfetch'd, Doduo, Dodrio, Seel, Dewgong, Grimer, Muk, Shellder, Cloyster, Gastly, Haunter, Gengar, Onix, Drowzee, Hypno, Krabby, Kingler, Voltorb, Electrode, Exeggcute, Exeggutor, Cubone, Marowak, Hitmonlee, Hitmonchan, Lickitung, Koffing, Weezing, Rhyhorn, Rhydon, Chansey, Tangela, Kangaskhan, Horsea, Seadra, Goldeen, Seaking, Staryu, Starmie, Mr. Mime, Scyther, Jynx, Electabuzz, Magmar, Pinsir, Tauros, Gyarados, Lapras, Eevee, Vaporeon, Jolteon, Flareon, Porygon, Omanyte, Omastar, Kabuto, Kabutops, Aerodactyl, Snorlax, Articuno, Zapdos, Moltres, Dratini, Dragonair, Dragonite, Mewtwo, Mew| 
+Roar, normal, 0, 100, 20, | Vulpix, Ninetales, Growlithe, Arcanine| | 
+Rock Slide, rock, 75, 90, 10, | | Ekans, Arbok, Sandshrew, Sandslash, Nidoqueen, Nidoking, Diglett, Dugtrio, Mankey, Primeape, Machop, Machoke, Machamp, Geodude, Graveler, Golem, Onix, Rhyhorn, Rhydon, Kangaskhan, Snorlax, Mew| 
+Rock Throw, rock, 50, 65, 15, | Geodude, Graveler, Golem, Onix| | 
+Rolling Kick, fighting, 60, 85, 15, 33| Hitmonlee| | 
+Sand-Attack, normal, 0, 100, 15, | Pidgey, Pidgeotto, Pidgeot, Sandshrew, Sandslash, Diglett, Dugtrio, Farfetch'd, Eevee, Vaporeon, Jolteon, Flareon| | 
+Scratch, normal, 40, 100, 35, | Charmander, Charmeleon, Charizard, Sandshrew, Sandslash, Nidoran♀, Nidorina, Nidoqueen, Paras, Parasect, Diglett, Dugtrio, Meowth, Persian, Psyduck, Golduck, Mankey, Primeape, Kabuto, Kabutops| | 
+Screech, normal, 0, 85, 40, | Ekans, Arbok, Golbat, Meowth, Persian, Mankey, Primeape, Tentacool, Tentacruel, Magnemite, Magneton, Grimer, Muk, Onix, Voltorb, Electrode, Lickitung, Electabuzz| | 
+Seismic Toss, fighting, 1, 100, 20, | Mankey, Primeape, Machop, Machoke, Machamp, Pinsir| Charmander, Charmeleon, Charizard, Squirtle, Wartortle, Blastoise, Pikachu, Raichu, Sandshrew, Sandslash, Nidoqueen, Nidoking, Clefairy, Clefable, Jigglypuff, Wigglytuff, Psyduck, Golduck, Mankey, Primeape, Poliwhirl, Poliwrath, Abra, Kadabra, Alakazam, Machop, Machoke, Machamp, Geodude, Graveler, Golem, Slowbro, Gengar, Drowzee, Hypno, Cubone, Marowak, Hitmonlee, Hitmonchan, Lickitung, Rhydon, Chansey, Kangaskhan, Mr. Mime, Jynx, Electabuzz, Magmar, Pinsir, Omastar, Kabutops, Snorlax, Mewtwo, Mew| 
+Self-Destruct, normal, 130, 100, 5, | Geodude, Graveler, Golem, Voltorb, Electrode, Koffing, Weezing| Geodude, Graveler, Golem, Grimer, Muk, Shellder, Cloyster, Gastly, Haunter, Gengar, Onix, Voltorb, Electrode, Exeggcute, Exeggutor, Koffing, Weezing, Snorlax, Mewtwo, Mew| 
+Sharpen, normal, 0, 100, 30, | Porygon| | 
+Sing, normal, 0, 55, 15, | Clefairy, Clefable, Jigglypuff, Wigglytuff, Chansey, Lapras| | 
+Skull Bash, normal, 100, 100, 15, | Squirtle, Wartortle, Blastoise| Charmander, Charmeleon, Charizard, Squirtle, Wartortle, Blastoise, Beedrill, Rattata, Raticate, Ekans, Arbok, Pikachu, Raichu, Sandshrew, Sandslash, Nidoran♀, Nidorina, Nidoqueen, Nidoran♂, Nidorino, Nidoking, Clefairy, Clefable, Vulpix, Ninetales, Jigglypuff, Wigglytuff, Paras, Parasect, Meowth, Persian, Psyduck, Golduck, Mankey, Primeape, Growlithe, Arcanine, Poliwag, Poliwhirl, Poliwrath, Abra, Kadabra, Alakazam, Machop, Machoke, Machamp, Tentacool, Tentacruel, Ponyta, Rapidash, Slowpoke, Slowbro, Farfetch'd, Doduo, Dodrio, Seel, Dewgong, Gengar, Drowzee, Hypno, Krabby, Kingler, Cubone, Marowak, Hitmonlee, Hitmonchan, Lickitung, Rhyhorn, Rhydon, Chansey, Tangela, Kangaskhan, Horsea, Seadra, Goldeen, Seaking, Staryu, Starmie, Mr. Mime, Scyther, Jynx, Electabuzz, Magmar, Tauros, Gyarados, Lapras, Eevee, Vaporeon, Jolteon, Flareon, Porygon, Omastar, Kabutops, Snorlax, Dratini, Dragonair, Dragonite, Mewtwo, Mew| 
+Sky Attack, flying, 140, 90, 5, | Moltres| Pidgey, Pidgeotto, Pidgeot, Spearow, Fearow, Doduo, Dodrio, Aerodactyl, Articuno, Zapdos, Moltres, Mew| 
+Slam, normal, 80, 74.6, 20, | Pikachu, Bellsprout, Weepinbell, Onix, Lickitung, Tangela, Dratini, Dragonair, Dragonite| | 
+Slash, normal, 70, 100, 20, | Charmander, Charmeleon, Charizard, Sandshrew, Sandslash, Paras, Parasect, Diglett, Dugtrio, Meowth, Persian, Farfetch'd, Scyther, Pinsir, Kabuto, Kabutops| | 
+Sleep Powder, grass, 0, 75, 15, | Bulbasaur, Ivysaur, Venusaur, Butterfree, Oddish, Gloom, Vileplume, Venonat, Venomoth, Bellsprout, Weepinbell, Victreebel, Exeggcute, Tangela| | 
+Sludge, poison, 65, 100, 20, 50| Grimer, Muk, Koffing, Weezing| | 
+Smog, poison, 20, 70, 20, 50| Koffing, Weezing, Magmar, Flareon| | 
+Smokescreen, normal, 0, 100, 20, | Koffing, Weezing, Horsea, Seadra, Magmar| | 
+Soft-Boiled, normal, 0, 100, 10, | | Chansey, Mew| 
+Solar Beam, grass, 120, 100, 10, | Bulbasaur, Ivysaur, Venusaur, Oddish, Gloom, Exeggcute| Bulbasaur, Ivysaur, Venusaur, Butterfree, Clefairy, Clefable, Jigglypuff, Wigglytuff, Oddish, Gloom, Vileplume, Paras, Parasect, Venonat, Venomoth, Bellsprout, Weepinbell, Victreebel, Exeggutor, Chansey, Tangela, Mr. Mime, Lapras, Snorlax, Mewtwo, Mew| 
+Sonic Boom, normal, 1, 90, 20, | Magnemite, Magneton, Voltorb, Electrode| | 
+Spike Cannon, normal, 20, 100, 15, | Cloyster, Omanyte, Omastar| | 
+Splash, normal, 0, 100, 40, | Magikarp| | 
+Spore, grass, 0, 100, 15, | Paras, Parasect| | 
+Stomp, normal, 65, 100, 20, 33| Ponyta, Rapidash, Krabby, Kingler, Exeggutor, Lickitung, Rhyhorn, Rhydon, Tauros| | 
+Strength, normal, 80, 100, 15, | | Charmander, Charmeleon, Charizard, Squirtle, Wartortle, Blastoise, Ekans, Arbok, Sandshrew, Sandslash, Nidoqueen, Nidoking, Clefairy, Clefable, Jigglypuff, Wigglytuff, Psyduck, Golduck, Mankey, Primeape, Poliwhirl, Poliwrath, Machop, Machoke, Machamp, Geodude, Graveler, Golem, Slowpoke, Slowbro, Seel, Dewgong, Gengar, Onix, Krabby, Kingler, Exeggutor, Cubone, Marowak, Hitmonlee, Hitmonchan, Lickitung, Rhyhorn, Rhydon, Chansey, Kangaskhan, Electabuzz, Magmar, Pinsir, Tauros, Gyarados, Lapras, Snorlax, Dragonite, Mewtwo, Mew| 
+String Shot, bug, 0, 95, 40, | Caterpie, Weedle| | 
+Struggle, normal, 50, 100, 10, | | | 
+Stun Spore, grass, 0, 75, 30, | Butterfree, Oddish, Gloom, Vileplume, Paras, Parasect, Venonat, Venomoth, Bellsprout, Weepinbell, Victreebel, Exeggcute, Tangela| | 
+Submission, fighting, 80, 80, 25, | Machop, Machoke, Machamp| Charmander, Charmeleon, Charizard, Squirtle, Wartortle, Blastoise, Pikachu, Raichu, Sandshrew, Sandslash, Nidoqueen, Nidoking, Clefairy, Clefable, Jigglypuff, Wigglytuff, Psyduck, Golduck, Mankey, Primeape, Poliwhirl, Poliwrath, Abra, Kadabra, Alakazam, Machop, Machoke, Machamp, Geodude, Graveler, Golem, Slowbro, Gengar, Drowzee, Hypno, Cubone, Marowak, Hitmonlee, Hitmonchan, Lickitung, Rhydon, Chansey, Kangaskhan, Mr. Mime, Jynx, Electabuzz, Magmar, Pinsir, Omastar, Kabutops, Snorlax, Mewtwo, Mew| 
+Substitute, normal, 0, 100, 10, | Mr. Mime| Bulbasaur, Ivysaur, Venusaur, Charmander, Charmeleon, Charizard, Squirtle, Wartortle, Blastoise, Butterfree, Beedrill, Pidgey, Pidgeotto, Pidgeot, Rattata, Raticate, Spearow, Fearow, Ekans, Arbok, Pikachu, Raichu, Sandshrew, Sandslash, Nidoran♀, Nidorina, Nidoqueen, Nidoran♂, Nidorino, Nidoking, Clefairy, Clefable, Vulpix, Ninetales, Jigglypuff, Wigglytuff, Zubat, Golbat, Oddish, Gloom, Vileplume, Paras, Parasect, Venonat, Venomoth, Diglett, Dugtrio, Meowth, Persian, Psyduck, Golduck, Mankey, Primeape, Growlithe, Arcanine, Poliwag, Poliwhirl, Poliwrath, Abra, Kadabra, Alakazam, Machop, Machoke, Machamp, Bellsprout, Weepinbell, Victreebel, Tentacool, Tentacruel, Geodude, Graveler, Golem, Ponyta, Rapidash, Slowpoke, Slowbro, Magnemite, Magneton, Farfetch'd, Doduo, Dodrio, Seel, Dewgong, Grimer, Muk, Shellder, Cloyster, Gastly, Haunter, Gengar, Onix, Drowzee, Hypno, Krabby, Kingler, Voltorb, Electrode, Exeggcute, Exeggutor, Cubone, Marowak, Hitmonlee, Hitmonchan, Lickitung, Koffing, Weezing, Rhyhorn, Rhydon, Chansey, Tangela, Kangaskhan, Horsea, Seadra, Goldeen, Seaking, Staryu, Starmie, Mr. Mime, Scyther, Jynx, Electabuzz, Magmar, Pinsir, Tauros, Gyarados, Lapras, Eevee, Vaporeon, Jolteon, Flareon, Porygon, Omanyte, Omastar, Kabuto, Kabutops, Aerodactyl, Snorlax, Articuno, Zapdos, Moltres, Dratini, Dragonair, Dragonite, Mewtwo, Mew| 
+Super Fang, normal, 1, 90, 10, | Rattata, Raticate| | 
+Supersonic, normal, 0, 55, 20, | Butterfree, Zubat, Golbat, Venonat, Venomoth, Tentacool, Tentacruel, Magnemite, Magneton, Shellder, Cloyster, Lickitung, Goldeen, Seaking, Aerodactyl| | 
+Surf, water, 95, 100, 15, | | Squirtle, Wartortle, Blastoise, Nidoqueen, Nidoking, Psyduck, Golduck, Poliwag, Poliwhirl, Poliwrath, Tentacool, Tentacruel, Slowpoke, Slowbro, Seel, Dewgong, Shellder, Cloyster, Krabby, Kingler, Lickitung, Rhydon, Kangaskhan, Horsea, Seadra, Goldeen, Seaking, Staryu, Starmie, Gyarados, Lapras, Vaporeon, Omanyte, Omastar, Kabuto, Kabutops, Snorlax, Dratini, Dragonair, Dragonite, Mew| 
+Swift, normal, 60, 100, 20, | Pikachu, Sandshrew, Sandslash, Magnemite, Magneton, Voltorb, Electrode, Staryu, Mewtwo| Charmander, Charmeleon, Charizard, Butterfree, Beedrill, Pidgey, Pidgeotto, Pidgeot, Rattata, Raticate, Spearow, Fearow, Pikachu, Raichu, Sandshrew, Sandslash, Vulpix, Ninetales, Zubat, Golbat, Venomoth, Meowth, Persian, Psyduck, Golduck, Mankey, Primeape, Growlithe, Arcanine, Ponyta, Rapidash, Slowpoke, Slowbro, Magnemite, Magneton, Farfetch'd, Shellder, Cloyster, Voltorb, Electrode, Hitmonlee, Hitmonchan, Horsea, Seadra, Goldeen, Seaking, Staryu, Starmie, Scyther, Electabuzz, Eevee, Vaporeon, Jolteon, Flareon, Porygon, Aerodactyl, Articuno, Zapdos, Moltres, Dratini, Dragonair, Dragonite, Mew| 
+Swords Dance, normal, 0, 100, 30, | Farfetch'd, Scyther, Pinsir| Bulbasaur, Ivysaur, Venusaur, Charmander, Charmeleon, Charizard, Beedrill, Sandshrew, Sandslash, Oddish, Gloom, Vileplume, Paras, Parasect, Bellsprout, Weepinbell, Victreebel, Tentacool, Tentacruel, Farfetch'd, Krabby, Kingler, Lickitung, Tangela, Scyther, Pinsir, Kabutops, Mew| 
+Tackle, normal, 35, 95, 35, | Bulbasaur, Ivysaur, Venusaur, Squirtle, Wartortle, Blastoise, Caterpie, Rattata, Raticate, Nidoran♀, Nidorina, Nidoqueen, Nidoran♂, Nidorino, Nidoking, Venonat, Venomoth, Geodude, Graveler, Golem, Magnemite, Magneton, Shellder, Onix, Voltorb, Electrode, Koffing, Weezing, Staryu, Starmie, Tauros, Magikarp, Gyarados, Eevee, Vaporeon, Jolteon, Flareon, Porygon| | 
+Tail Whip, normal, 0, 100, 30, | Squirtle, Wartortle, Blastoise, Rattata, Raticate, Pikachu, Nidoran♀, Nidorina, Nidoqueen, Vulpix, Ninetales, Psyduck, Golduck, Ponyta, Rapidash, Cubone, Marowak, Rhyhorn, Rhydon, Chansey, Kangaskhan, Goldeen, Seaking, Tauros, Eevee, Vaporeon, Jolteon, Flareon| | 
+Take Down, normal, 90, 85, 20, | Growlithe, Arcanine, Ponyta, Rapidash, Seel, Dewgong, Rhyhorn, Rhydon, Tauros, Eevee, Aerodactyl| Bulbasaur, Ivysaur, Venusaur, Charmander, Charmeleon, Charizard, Squirtle, Wartortle, Blastoise, Butterfree, Beedrill, Pidgey, Pidgeotto, Pidgeot, Rattata, Raticate, Spearow, Fearow, Ekans, Arbok, Pikachu, Raichu, Sandshrew, Sandslash, Nidoran♀, Nidorina, Nidoqueen, Nidoran♂, Nidorino, Nidoking, Clefairy, Clefable, Vulpix, Ninetales, Jigglypuff, Wigglytuff, Zubat, Golbat, Oddish, Gloom, Vileplume, Paras, Parasect, Venonat, Venomoth, Diglett, Dugtrio, Meowth, Persian, Psyduck, Golduck, Mankey, Primeape, Growlithe, Arcanine, Poliwag, Poliwhirl, Poliwrath, Abra, Kadabra, Alakazam, Machop, Machoke, Machamp, Bellsprout, Weepinbell, Victreebel, Tentacool, Tentacruel, Geodude, Graveler, Golem, Ponyta, Rapidash, Slowpoke, Slowbro, Magnemite, Magneton, Farfetch'd, Doduo, Dodrio, Seel, Dewgong, Shellder, Cloyster, Gengar, Onix, Drowzee, Hypno, Krabby, Kingler, Voltorb, Electrode, Exeggcute, Exeggutor, Cubone, Marowak, Hitmonlee, Hitmonchan, Lickitung, Rhyhorn, Rhydon, Chansey, Tangela, Kangaskhan, Horsea, Seadra, Goldeen, Seaking, Staryu, Starmie, Mr. Mime, Scyther, Jynx, Electabuzz, Magmar, Pinsir, Tauros, Gyarados, Lapras, Eevee, Vaporeon, Jolteon, Flareon, Porygon, Omanyte, Omastar, Kabuto, Kabutops, Aerodactyl, Snorlax, Articuno, Zapdos, Moltres, Dratini, Dragonair, Dragonite, Mewtwo, Mew| 
+Teleport, psychic, 0, 100, 20, | Abra, Kadabra, Alakazam| Butterfree, Clefairy, Clefable, Jigglypuff, Wigglytuff, Venomoth, Arcanine, Abra, Kadabra, Alakazam, Slowpoke, Slowbro, Magnemite, Magneton, Shellder, Cloyster, Drowzee, Hypno, Voltorb, Electrode, Exeggcute, Exeggutor, Chansey, Staryu, Starmie, Mr. Mime, Jynx, Electabuzz, Magmar, Porygon, Mewtwo, Mew| 
+Thrash, normal, 90, 100, 20, | Nidoking, Mankey, Primeape, Cubone, Marowak, Jynx| | 
+Thunder, electric, 120, 70, 10, | Pikachu, Electabuzz, Jolteon, Zapdos| Rattata, Raticate, Pikachu, Raichu, Nidoran♀, Nidorina, Nidoqueen, Nidoran♂, Nidorino, Nidoking, Clefairy, Clefable, Jigglypuff, Wigglytuff, Meowth, Persian, Mankey, Primeape, Magnemite, Magneton, Grimer, Muk, Gastly, Haunter, Gengar, Voltorb, Electrode, Lickitung, Koffing, Weezing, Rhyhorn, Rhydon, Chansey, Kangaskhan, Staryu, Starmie, Mr. Mime, Electabuzz, Tauros, Gyarados, Lapras, Jolteon, Porygon, Snorlax, Zapdos, Dratini, Dragonair, Dragonite, Mewtwo, Mew| 
+Thunderbolt, electric, 95, 100, 15, 10| Pikachu| Rattata, Raticate, Pikachu, Raichu, Nidoran♀, Nidorina, Nidoqueen, Nidoran♂, Nidorino, Nidoking, Clefairy, Clefable, Jigglypuff, Wigglytuff, Meowth, Persian, Mankey, Primeape, Magnemite, Magneton, Grimer, Muk, Gastly, Haunter, Gengar, Voltorb, Electrode, Lickitung, Koffing, Weezing, Rhyhorn, Rhydon, Chansey, Kangaskhan, Staryu, Starmie, Mr. Mime, Electabuzz, Tauros, Gyarados, Lapras, Jolteon, Porygon, Snorlax, Zapdos, Dratini, Dragonair, Dragonite, Mewtwo, Mew| 
+Thunder Punch, electric, 75, 100, 15, 10| Hitmonchan, Electabuzz| | 
+Thunder Shock, electric, 40, 100, 30, | Pikachu, Raichu, Magnemite, Magneton, Electabuzz, Jolteon, Zapdos| | 
+Thunder Wave, electric, 0, 100, 20, 10| Pikachu, Raichu, Magnemite, Magneton, Jolteon, Dratini, Dragonair, Dragonite| Pikachu, Raichu, Clefairy, Clefable, Jigglypuff, Wigglytuff, Abra, Kadabra, Alakazam, Slowpoke, Slowbro, Magnemite, Magneton, Drowzee, Hypno, Voltorb, Electrode, Chansey, Staryu, Starmie, Mr. Mime, Electabuzz, Jolteon, Porygon, Zapdos, Dratini, Dragonair, Dragonite, Mewtwo, Mew| 
+Toxic, poison, 0, 85, 10, | | Bulbasaur, Ivysaur, Venusaur, Charmander, Charmeleon, Charizard, Squirtle, Wartortle, Blastoise, Butterfree, Beedrill, Pidgey, Pidgeotto, Pidgeot, Rattata, Raticate, Spearow, Fearow, Ekans, Arbok, Pikachu, Raichu, Sandshrew, Sandslash, Nidoran♀, Nidorina, Nidoqueen, Nidoran♂, Nidorino, Nidoking, Clefairy, Clefable, Vulpix, Ninetales, Jigglypuff, Wigglytuff, Zubat, Golbat, Oddish, Gloom, Vileplume, Paras, Parasect, Venonat, Venomoth, Diglett, Dugtrio, Meowth, Persian, Psyduck, Golduck, Mankey, Primeape, Growlithe, Arcanine, Poliwag, Poliwhirl, Poliwrath, Abra, Kadabra, Alakazam, Machop, Machoke, Machamp, Bellsprout, Weepinbell, Victreebel, Tentacool, Tentacruel, Geodude, Graveler, Golem, Ponyta, Rapidash, Slowpoke, Slowbro, Magnemite, Magneton, Farfetch'd, Doduo, Dodrio, Seel, Dewgong, Grimer, Muk, Shellder, Cloyster, Gastly, Haunter, Gengar, Onix, Drowzee, Hypno, Krabby, Kingler, Voltorb, Electrode, Exeggcute, Exeggutor, Cubone, Marowak, Hitmonlee, Hitmonchan, Lickitung, Koffing, Weezing, Rhyhorn, Rhydon, Chansey, Tangela, Kangaskhan, Horsea, Seadra, Goldeen, Seaking, Staryu, Starmie, Mr. Mime, Scyther, Jynx, Electabuzz, Magmar, Pinsir, Tauros, Gyarados, Lapras, Eevee, Vaporeon, Jolteon, Flareon, Porygon, Omanyte, Omastar, Kabuto, Kabutops, Aerodactyl, Snorlax, Articuno, Zapdos, Moltres, Dratini, Dragonair, Dragonite, Mewtwo, Mew| 
+Transform, normal, 0, 100, 10, | Ditto, Mew| | 
+Tri Attack, normal, 80, 100, 10, | Doduo, Dodrio, Porygon| Clefairy, Clefable, Jigglypuff, Wigglytuff, Abra, Kadabra, Alakazam, Slowpoke, Slowbro, Doduo, Dodrio, Shellder, Cloyster, Drowzee, Hypno, Chansey, Staryu, Starmie, Porygon, Mewtwo, Mew| 
+Twineedle, bug, 25, 100, 20, | Beedrill| | 
+Vice Grip, normal, 55, 100, 30, | Krabby, Kingler, Pinsir| | 
+Vine Whip, grass, 35, 100, 10, | Bulbasaur, Ivysaur, Venusaur, Bellsprout, Weepinbell, Tangela| | 
+Waterfall, water, 80, 100, 15, | Goldeen, Seaking| | 
+Water Gun, water, 40, 100, 25, | Squirtle, Wartortle, Blastoise, Poliwag, Poliwhirl, Poliwrath, Tentacool, Tentacruel, Slowpoke, Slowbro, Horsea, Seadra, Staryu, Starmie, Lapras, Vaporeon, Omanyte, Omastar| Squirtle, Wartortle, Blastoise, Rattata, Raticate, Nidorina, Nidoqueen, Nidorino, Nidoking, Clefairy, Clefable, Jigglypuff, Wigglytuff, Meowth, Persian, Psyduck, Golduck, Poliwag, Poliwhirl, Poliwrath, Tentacool, Tentacruel, Slowpoke, Slowbro, Seel, Dewgong, Shellder, Cloyster, Krabby, Kingler, Cubone, Marowak, Lickitung, Rhydon, Chansey, Kangaskhan, Horsea, Seadra, Goldeen, Seaking, Staryu, Starmie, Jynx, Gyarados, Lapras, Vaporeon, Omanyte, Omastar, Kabuto, Kabutops, Snorlax, Articuno, Dratini, Dragonair, Dragonite, Mewtwo, Mew| 
+Whirlwind, normal, 0, 85, 20, | Butterfree, Pidgey, Pidgeotto, Pidgeot| Butterfree, Pidgey, Pidgeotto, Pidgeot, Spearow, Fearow, Zubat, Golbat, Venomoth, Farfetch'd, Doduo, Dodrio, Aerodactyl, Articuno, Zapdos, Moltres, Mew| 
+Wing Attack, flying, 35, 100, 35, | Pidgey, Pidgeotto, Pidgeot, Zubat, Golbat, Scyther, Aerodactyl| | 
+Withdraw, water, 0, 100, 40, | Squirtle, Wartortle, Blastoise, Slowbro, Shellder, Cloyster, Omanyte, Omastar| | 
+Wrap, normal, 15, 85, 20, | Ekans, Arbok, Bellsprout, Weepinbell, Victreebel, Tentacool, Tentacruel, Lickitung, Dratini, Dragonair, Dragonite| | 
