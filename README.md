@@ -26,14 +26,14 @@ WebScraping.cs contains most of the code that enables PokePanion to scrape the w
 ### Pokemon and Move Classes
 Pokemon.cs and Move.cs contain classes defining what attributes a Pokemon and a Move will have, as well as several methods related to creating the Dexes and displaying Pokemon and Move information. I will picture the primary part of the two classes below. However, for more details and expanded comments, please feel free to view the source code.
 
-[Insert Pokemon.cs Picture Here]
+![Pokemon.cs Snapshot](Pokemon%20Snapshot.png?raw=true "Pokemon.cs Snapshot")
 
-[Insert Move.cs Picture Here]
+![Move.cs Snapshot](Move%20Snapshot.png?raw=true "Move.cs Snapshot")
 
 ### User Interaction
 There's also a class to handle User Interface. This is where methods containing prompts for the user and logic for where to route the user based on their inputs. I will picture the primary part of the User Interface class below. However, for more details and expanded comments, please feel free to view the source code.
 
-[Insert UserInterface.cs Picture Here]
+![UserInterface.cs Snapshot](UserInterfacec%20Snapshot.png?raw=true "UserInterface.cs Snapshot")
 
 ### Wrapping Up
 Thanks for dropping by to check out PokePanion! I hope you can get some use out of the program or maybe draw some inspiration from it. If you have questions or just want to connect, please reach out either here or on LinkedIn!
