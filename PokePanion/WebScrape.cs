@@ -15,6 +15,68 @@ namespace PokePanion
     public static class WebScrape
     {
         /// <summary>
+        /// Creates Pokemon and Move Data files from scratch by scraping the web.
+        /// </summary>
+        /// <returns>PokeDex and MoveDex</returns>
+        public static (Dictionary<string, Pokemon> pokeDex, Dictionary<string, Move> moveDex) CreateLocalFiles()
+        {
+            Console.WriteLine("This program supports both Chrome and Edge, but runs much better with Chrome.");
+            Console.WriteLine("Please enter which you would prefer:");
+            var browser = Console.ReadLine().ToLower();
+            
+            Console.WriteLine("Building Moves and Pokemon Data from scratch");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine("Please note: This will take several minutes");
+            Console.ForegroundColor = Console.BackgroundColor;
+
+            IWebDriver driver; // Uses packaged versions of Chrome and Edge Drivers
+            if (browser.Contains("edge")) 
+            {   
+                var options = new EdgeOptions();
+                driver = new EdgeDriver(EdgeDriverService.CreateChromiumService());
+            }
+            else
+            {
+                var options = new ChromeOptions();
+                options.AddArgument("log-level=3");
+                driver = new ChromeDriver(ChromeDriverService.CreateDefaultService(), options);
+            }
+            driver.Url = "https://www.google.com/";
+            driver.Manage().Window.Minimize();
+        
+        
+            // Create Dictionary for all pokemon with name and dex number
+            var (pokeDexInit, dexDict) = Pokemon.InitializePokeDex();
+
+            // Create text file with list of Move Names
+            CreateMoveNameFile(driver);
+            Console.ResetColor();
+            Console.WriteLine("Move Names file created.");
+            Console.WriteLine("Starting Move Data file.");
+        
+            // Create MoveData.txt
+            CreateMovesDataFile(driver);
+        
+            // Create local MoveDex
+            var moveDex = Move.CreateMoveDex();
+
+            Console.WriteLine("Moves data file created.");
+            Console.WriteLine("Starting Pokemon Data file.");
+            
+            // Create PokemonData.txt
+            CreatePokemonDataFile(driver, pokeDexInit, moveDex, dexDict);
+            
+            // Create local PokeDex
+            var pokeDex = Pokemon.CreatePokeDex();
+
+            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.WriteLine("File creation complete!");
+            Console.ResetColor();
+            return (pokeDex, moveDex);
+        }
+        
+        
+        /// <summary>
         /// Collects all move names by scraping web and writes them to MoveNames.txt
         /// </summary>
         /// <param name="driver">Initialized WebDriver</param>
@@ -562,69 +624,6 @@ namespace PokePanion
             return driver.FindElement(By.CssSelector(
                     $"#content > main > div > div > table:nth-child(8) > tbody > tr:nth-child(2) > td > table > tbody > tr > td:nth-child({evoNum * 2 - 2}) > a > img"))
                 .GetProperty("src").Substring(39).Replace(".png", "");
-        }
-        
-
-        /// <summary>
-        /// Creates Pokemon and Move Data files from scratch by scraping the web.
-        /// </summary>
-        /// <returns>PokeDex and MoveDex</returns>
-        public static (Dictionary<string, Pokemon> pokeDex, Dictionary<string, Move> moveDex) CreateLocalFiles()
-        {
-            Console.WriteLine("This program supports both Chrome and Edge, but is significantly faster with Chrome.");
-            Console.WriteLine("Please enter which you would prefer:");
-            var browser = Console.ReadLine().ToLower();
-            
-            Console.WriteLine("Building Moves and Pokemon Data from scratch");
-            Console.ForegroundColor = ConsoleColor.Yellow;
-            Console.WriteLine("Please note: This will take several minutes");
-            Console.ForegroundColor = Console.BackgroundColor;
-
-            IWebDriver driver; // Uses packaged versions of Chrome and Edge Drivers
-            if (browser.Contains("edge")) 
-            {   
-                var options = new EdgeOptions();
-                options.AddArgument("log-level=3");
-                driver = new EdgeDriver(EdgeDriverService.CreateChromiumService());
-            }
-            else
-            {
-                var options = new ChromeOptions();
-                options.AddArgument("log-level=3");
-                driver = new ChromeDriver(ChromeDriverService.CreateDefaultService(), options);
-            }
-            driver.Url = "https://www.google.com/";
-            driver.Manage().Window.Minimize();
-        
-        
-            // Create Dictionary for all pokemon with name and dex number
-            var (pokeDexInit, dexDict) = Pokemon.InitializePokeDex();
-
-            // Create text file with list of Move Names
-            CreateMoveNameFile(driver);
-            Console.ResetColor();
-            Console.WriteLine("Move Names file created.");
-            Console.WriteLine("Starting Move Data file.");
-        
-            // Create MoveData.txt
-            CreateMovesDataFile(driver);
-        
-            // Create local MoveDex
-            var moveDex = Move.CreateMoveDex();
-
-            Console.WriteLine("Moves data file created.");
-            Console.WriteLine("Starting Pokemon Data file.");
-            
-            // Create PokemonData.txt
-            CreatePokemonDataFile(driver, pokeDexInit, moveDex, dexDict);
-            
-            // Create local PokeDex
-            var pokeDex = Pokemon.CreatePokeDex();
-
-            Console.ForegroundColor = ConsoleColor.Blue;
-            Console.WriteLine("File creation complete!");
-            Console.ResetColor();
-            return (pokeDex, moveDex);
         }
     }
 }

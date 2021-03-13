@@ -81,20 +81,6 @@ namespace PokePanion
         
 
         /// <summary>
-        /// Finds a pokemon in the PokeDex by searching for Dex Number
-        /// </summary>
-        /// <param name="dexNum">Dex Number of Pokemon to search</param>
-        /// <param name="dexDict">Dex Number to Name Translator</param>
-        /// <param name="pokeDex">Generation's PokeDex</param>
-        /// <returns>Pokemon object for specified Pokemon</returns>
-        public static Pokemon FindByDexNum(int dexNum, Dictionary<int, string> dexDict,
-            Dictionary<string, Pokemon> pokeDex)
-        {
-            return pokeDex[dexDict[dexNum]];
-        }
-        
-
-        /// <summary>
         /// Creates a complete PokeDex from data in a local file
         /// </summary>
         /// <returns>Returns completed PokeDex as Dictionary</returns>
