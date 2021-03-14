@@ -17,11 +17,11 @@ All the files necessary to run PokePanion are included in this repository. You c
 ## Running PokePanion
 When PokePanion is first started, it will ask the user if they would like to build the data files from scratch, or use already created versions. PokePanion comes pre-packaged with the necessary data files, but I welcome you to run it through its web-scraping paces again. The process will usually take about 10 minutes (internet-dependent) to complete, and PokePanion will give you quick update messages as the data is collected.
 
-[Insert Data Collection Updates Picture Here]
+![Data Collection Messages](File%20Creation%20Snapshot.png?raw=true "Data Collection Snapshot")
 
 Once it has completed the file creation process, or immediately if you skip file creation, PokePanion will create two dictionaries called the PokeDex and MoveDex. These are the data structures the rest of the program will reference when the user requests information on any Move or Pokemon. Once these references are created, PokePanion will ask the user  what information they are looking for, narrowing down the search with successive prompts. Let's say you wanted to know what Pokemon are in Machop's evolutionary line, and how and when they evolve. This is what PokePanion would show you:
 
-[Insert User Prompts and Final Returns Picture Here]
+![Machop Evolution Line](Machop%20Evolution%20Screenshot.png?raw=true "Machop Evoultion Line Snapshot")
 
 Once PokePanion has displayed the requested information, it will the ask the user if they have any more questions. PokePanion will repeat this loop until the user is satisfied and selects to exit the program. 
 
