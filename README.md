@@ -1,5 +1,14 @@
 # PokePanion
 
+## Table of Contents
+- [Getting Started](#Getting-Started)
+- [Running PokePanion](#Running-PokePanion)
+- [Behind the Scenes](#Behind-the-Scenes)
+  * [File Creation](#File-Creation)
+  * [Pokemon and Move Classes](#Pokemon-and-Move-Classes)
+  * [User Interaction](#User-Interaction)
+- [Wrapping Up](#Wrapping-Up)
+
 ## Getting Started
 Thanks for checking out PokePanion! I built this application as I was playing Pokemon Red and kept wanting to look up some basic information on what levels Pokemon evolve and learn moves. I decided to create this app to answer questions that I had been asking, as opposed to just searching for the answers myself. I thought this would be a good way to learn how to use tools in C# centered around scraping the web, as well as how to handle errors and write readable code when dealing with larger projects. 
 
@@ -33,7 +42,7 @@ Pokemon.cs and Move.cs contain classes defining what attributes a Pokemon and a 
 ### User Interaction
 There's also a class to handle User Interface. This is where methods containing prompts for the user and logic for where to route the user based on their inputs. I will picture the primary part of the User Interface class below. However, for more details and expanded comments, please feel free to view the source code.
 
-![UserInterface.cs Snapshot](UserInterfacec%20Snapshot.png?raw=true "UserInterface.cs Snapshot")
+![UserInterface.cs Snapshot](UserInterface%20Snapshot.png?raw=true "UserInterface.cs Snapshot")
 
-### Wrapping Up
+## Wrapping Up
 Thanks for dropping by to check out PokePanion! I hope you can get some use out of the program or maybe draw some inspiration from it. If you have questions or just want to connect, please reach out either here or on LinkedIn!
