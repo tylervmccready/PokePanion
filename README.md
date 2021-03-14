@@ -10,7 +10,7 @@
 - [Wrapping Up](#Wrapping-Up)
 
 ## Getting Started
-Thanks for checking out PokePanion! I built this application as I was playing Pokemon Red and kept wanting to look up some basic information on what levels Pokemon evolve and learn moves. I decided to create this app to answer questions that I had been asking, as opposed to just searching for the answers myself. I thought this would be a good way to learn how to use tools in C# centered around scraping the web, as well as how to handle errors and write readable code when dealing with larger projects. 
+Thanks for checking out PokePanion! I built this application as I was playing Pokemon Red and kept wanting to look up some basic information on what levels Pokemon evolve and learn moves. I decided to create this app to answer questions that I had been asking, as opposed to just searching for the answers on Google. I thought this would be a good way to learn how to use tools in C# centered around scraping the web, as well as how to handle errors and write readable code when dealing with larger projects. 
 
 All the files necessary to run PokePanion are included in this repository. You can either load it into an IDE, or just use the executable to run the program on Windows. I've also included both EdgeDriver and ChromeDriver executables to allow the program to surf the web, as long as they are left in the file paths they are currently in. These can be omitted as well, as there is previously collected data stored in text files that the program can also use. You must always retain PokemonNames.txt, as well as either the webdrivers or the local files, for the program to have data to use in outputting requested information.
 
